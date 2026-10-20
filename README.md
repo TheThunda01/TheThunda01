@@ -13,7 +13,7 @@ I'm a research associate interested in computational biology, infectious-disease
 | [EvidenceTrail](https://github.com/TheThunda01/evidencetrail) | How can reviewers inspect extraction records and disagreements? Table checks, explicit comparison denominators, and documented review decisions. |
 | [Review Compass](https://github.com/TheThunda01/review-compass) | How can a review plan be made easier to inspect? Structured planning, transparent keyword cues, and exports that keep screening decisions with the reviewer. |
 
-For the background, rationale, and main themes of each project, start with the [project guide](PROJECT_GUIDE.md). Each repository also has a short context page, runnable instructions, methods, sources, and limitations. The [roadmap](PORTFOLIO_PLAN.md) separates work already implemented from next learning goals.
+For the background, rationale, and main themes of each project, start with the [project guide](PROJECT_GUIDE.md). Each repository also has a short context page, a detailed biology or concepts guide, runnable instructions, methods, sources, and limitations. The [roadmap](PORTFOLIO_PLAN.md) separates work already implemented from next learning goals.
 
 ## How I approach the work
 

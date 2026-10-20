@@ -2,6 +2,21 @@
 
 The common thread is making research decisions easier to inspect: what entered an analysis, what was calculated, and what the result can reasonably support. The projects cover different stages of that work. They are educational analyses and working software demonstrations, not claims of a new biological discovery.
 
+## Biology and concepts, with runnable checks
+
+The guides below explain the underlying biology or research concepts, the measurement assumptions, and how to interpret the implemented checks.
+
+| Project | Concept guide | New practical check |
+| --- | --- | --- |
+| Pasilla expression QC | [RNA processing, gene counts, normalization, and study design](https://github.com/TheThunda01/pasilla-expression-qc/blob/main/docs/biology-and-concepts.md) | Condition/read-type cross-tabulation and additive-design rank diagnostics |
+| Sequence Quality Toolkit | [Reads, bases, quality scores, and paired-end data](https://github.com/TheThunda01/sequence-quality-toolkit/blob/main/docs/biology-and-concepts.md) | Streaming checks that paired FASTQ files have matching identities and mate labels |
+| Surveillance data quality | [NAAT positivity, test denominators, and reporting time](https://github.com/TheThunda01/surveillance-data-quality/blob/main/docs/biology-and-concepts.md) | Consecutive-week changes in testing denominators, with user-selected review thresholds |
+| Cell-feature model validation | [Cell morphology, classification, calibration, and prevalence](https://github.com/TheThunda01/cell-feature-model-validation/blob/main/docs/biology-and-concepts.md) | Conditional predictive-value scenarios under explicitly hypothetical prevalence |
+| EvidenceTrail | [Studies, reports, missingness, effects, and certainty](https://github.com/TheThunda01/evidencetrail/blob/main/docs/biology-and-concepts.md) | Field-level source-locator completeness and downloadable summaries |
+| Review Compass | [Question framing, retrieval, screening, and synthesis](https://github.com/TheThunda01/review-compass/blob/main/docs/biology-and-concepts.md) | Exact-query structural audit with file fingerprints; search terms retained beyond six entries |
+
+These extensions do not establish biological mechanisms, clinical utility, or validated automated review decisions. The guides explain the specific limits rather than treating a passing software check as scientific confirmation.
+
 ## Pasilla expression QC
 
 Gene-count tables are not ready-made biological answers. Library size, count composition, sample annotation, and transformation choices can affect exploratory views. This project uses public Drosophila counts to investigate those choices before asking a gene-level question.

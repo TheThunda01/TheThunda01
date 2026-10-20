@@ -6,14 +6,14 @@ The portfolio now has six connected projects. Its scope is careful computational
 
 | Project | Current evidence a reader can inspect |
 | --- | --- |
-| Pasilla expression QC | Public input fingerprints, validated metadata, normalization comparisons, sample distances, and leave-one-out PCA sensitivity |
-| Sequence Quality Toolkit | Streaming FASTQ validation, per-cycle denominators, a provenance-checked public yeast prefix, FASTA/manifest reconciliation, and edge-case tests |
-| Surveillance data quality | A real CDC snapshot, count and denominator checks, observation-window sensitivity, snapshot comparison, and synthetic as-of revision tests |
-| Cell-feature model validation | Repeated nested CV, fold-level results, cross-fitted threshold development, calibration summaries, and preserved historical holdout results |
-| EvidenceTrail | Table checks, reviewer pairing coverage, nonblank agreement, traceable review decisions, and Python/browser parity tests |
-| Review Compass | Structured review planning, transparent literal keyword cues, field-completion summaries, export, and tested matching boundaries |
+| Pasilla expression QC | Public input fingerprints, normalization and PCA sensitivity, condition/read-type design diagnostics, and an explicit unresolved source-label caveat |
+| Sequence Quality Toolkit | Streaming FASTQ validation, paired-file consistency, per-cycle denominators, a provenance-checked public yeast prefix, and FASTA/manifest reconciliation |
+| Surveillance data quality | A real CDC snapshot, denominator-change diagnostics, observation-window sensitivity, snapshot comparison, and synthetic as-of revision tests |
+| Cell-feature model validation | Repeated nested CV, calibration, cross-fitted thresholds, conditional prevalence scenarios, and preserved historical holdout results |
+| EvidenceTrail | Table checks, reviewer comparisons, downloadable field/locator completeness, traceable review decisions, and Python/browser parity tests |
+| Review Compass | Structured planning, transparent keyword cues, exact-query structural checks with fingerprints, export, and tested matching boundaries |
 
-Background, rationale, and limitations are collected in the [project guide](PROJECT_GUIDE.md). The introductory GitHub tutorial repositories have been archived. The former portfolio-builder repository has been retained as Review Compass because it contains substantial project work; its history and template origin are preserved.
+Biology/concepts guides, background, rationale, and limitations are collected in the [project guide](PROJECT_GUIDE.md). The introductory GitHub tutorial repositories have been archived. The former portfolio-builder repository has been retained as Review Compass because it contains substantial project work; its history and template origin are preserved.
 
 ## Next development priorities
 
