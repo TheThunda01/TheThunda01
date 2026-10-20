@@ -13,7 +13,7 @@ The portfolio now has six connected projects. Its scope is careful computational
 | EvidenceTrail | Table checks, reviewer comparisons, downloadable field/locator completeness, traceable review decisions, and Python/browser parity tests |
 | Review Compass | Structured planning, transparent keyword cues, exact-query structural checks with fingerprints, export, and tested matching boundaries |
 
-Biology/concepts guides, background, rationale, and limitations are collected in the [project guide](PROJECT_GUIDE.md). The introductory GitHub tutorial repositories have been archived. The former portfolio-builder repository has been retained as Review Compass because it contains substantial project work; its history and template origin are preserved.
+Biology/concepts guides, background, rationale, and limitations are collected in the [project guide](PROJECT_GUIDE.md). The two introductory GitHub tutorial repositories were removed after their Git histories were backed up. The former portfolio-builder repository has been retained as Review Compass because it contains substantial project work; its history and template origin are preserved.
 
 ## Next development priorities
 
