@@ -1,0 +1,50 @@
+{
+  "review_date": "2026-10-20",
+  "purpose": "Starting revisions for this evidence and practical-use review; these are baseline commits, not latest-version claims",
+  "repositories": {
+    "gfp-active-learning": {
+      "url": "https://github.com/TheThunda01/gfp-active-learning",
+      "baseline_commit": "ff291bcfa5f968b07a2c975ae68ded4f4c2c4675"
+    },
+    "review-compass": {
+      "url": "https://github.com/TheThunda01/review-compass",
+      "baseline_commit": "316554380cfbdbfbfbd729c35b3f7eb5a8de83f5"
+    },
+    "cell-feature-model-validation": {
+      "url": "https://github.com/TheThunda01/cell-feature-model-validation",
+      "baseline_commit": "ea569576883701462d978ccf7d3c51c79b5a06b4"
+    },
+    "evidencetrail": {
+      "url": "https://github.com/TheThunda01/evidencetrail",
+      "baseline_commit": "137d950bc840f56e81a126aff69c420a176f7f04"
+    },
+    "enzyme-kinetics-workbench": {
+      "url": "https://github.com/TheThunda01/enzyme-kinetics-workbench",
+      "baseline_commit": "e04ea48a25b24f8735442724b567ba60e8745657"
+    },
+    "surveillance-data-quality": {
+      "url": "https://github.com/TheThunda01/surveillance-data-quality",
+      "baseline_commit": "58150a3206f541c14ff31f06667228603370811b"
+    },
+    "molecular-solubility-benchmark": {
+      "url": "https://github.com/TheThunda01/molecular-solubility-benchmark",
+      "baseline_commit": "ec731faf27b71d8fa42baa711d013914d41f49b8"
+    },
+    "protein-structure-evidence": {
+      "url": "https://github.com/TheThunda01/protein-structure-evidence",
+      "baseline_commit": "f45228f8e8ab4d5a9c7681d479a8159ef2661fad"
+    },
+    "pasilla-expression-qc": {
+      "url": "https://github.com/TheThunda01/pasilla-expression-qc",
+      "baseline_commit": "5ef2c14c815ff6c1da5d8e40c794ea2d2bbe8f7a"
+    },
+    "TheThunda01": {
+      "url": "https://github.com/TheThunda01/TheThunda01",
+      "baseline_commit": "d8d1a9527bfa501b9b4296e5115f910f52f8cdc7"
+    },
+    "sequence-quality-toolkit": {
+      "url": "https://github.com/TheThunda01/sequence-quality-toolkit",
+      "baseline_commit": "9a932b88e6f6450b18f25a7c270f93faef6bbbae"
+    }
+  }
+}

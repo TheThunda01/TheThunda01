@@ -28,6 +28,8 @@ My longer-term goal is to develop interpretable models and experimentally testab
 
 The [project guide](PROJECT_GUIDE.md) explains each project's background, rationale, and key concepts. Each repository includes runnable instructions, methods, sources, and limitations. The [roadmap](PORTFOLIO_PLAN.md) separates implementation from future learning goals, including pathways, host–pathogen biology, and evidence-aware scientific agents.
 
+The [research and practical-use review](RESEARCH_REVIEW.md) links the literature searches, current improvements, and remaining work. A [shared documentation standard](PORTFOLIO_STANDARDS.md) makes the projects easier to compare, and the [maintenance guide](MAINTENANCE.md) explains how I would keep their data, dependencies, and evidence up to date.
+
 ## How I approach the work
 
 The collection develops Python, SQL, JavaScript, statistics, scientific data validation, and reproducible documentation. Public data retain attribution and reuse terms; synthetic examples are labeled. These educational analyses and research-software demonstrations were developed with AI assistance. Tests check specified behavior; they do not establish biological correctness, clinical validity, or autonomous scientific judgment.

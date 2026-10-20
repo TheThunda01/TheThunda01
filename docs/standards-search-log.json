@@ -1,0 +1,152 @@
+{
+  "search_date": "2026-10-20",
+  "scope": "Cross-portfolio research-software and search-reporting guidance; focused rapid review, not exhaustive systematic review",
+  "inclusion_criteria": [
+    "Primary guidance papers directly relevant to search reporting, executable research software, documentation, or reuse",
+    "Foundational guidance retained irrespective of publication year",
+    "Current practice guidance published by 2026-10-20"
+  ],
+  "exclusion_criteria": [
+    "Clinical applications of a reporting checklist unrelated to software or review methods",
+    "Duplicate co-publication treated as one guidance source"
+  ],
+  "searches": [
+    {
+      "source": "PubMed connector",
+      "query": "\"PRISMA-S\"[Title]",
+      "date_limits": null,
+      "total_count": 5,
+      "retrieved_pmids": [
+        "33499930",
+        "34285662",
+        "35440907",
+        "38479124",
+        "34738640"
+      ],
+      "sort": "relevance",
+      "max_results": 10,
+      "has_more": false
+    },
+    {
+      "source": "PubMed connector",
+      "query": "\"FAIR Principles for Research Software\"[Title]",
+      "date_limits": null,
+      "total_count": 0,
+      "retrieved_pmids": [],
+      "sort": "relevance",
+      "max_results": 10,
+      "has_more": false
+    },
+    {
+      "source": "PubMed connector",
+      "query": "\"Good enough practices in scientific computing\"[Title]",
+      "date_limits": null,
+      "total_count": 0,
+      "retrieved_pmids": [],
+      "sort": "relevance",
+      "max_results": 10,
+      "has_more": false
+    },
+    {
+      "source": "PubMed connector",
+      "query": "10.1371/journal.pcbi.1005510",
+      "date_limits": null,
+      "total_count": 1,
+      "retrieved_pmids": [
+        "28640806"
+      ],
+      "sort": "relevance",
+      "max_results": 5,
+      "has_more": false
+    },
+    {
+      "source": "PubMed connector",
+      "query": "\"CODE beyond FAIR\"[Title]",
+      "date_to": "2026/10/20",
+      "total_count": 0,
+      "retrieved_pmids": [],
+      "sort": "relevance",
+      "max_results": 10,
+      "has_more": false
+    },
+    {
+      "source": "Web search; primary publisher pages screened",
+      "query": "\"Introducing the FAIR Principles for research software\" 2022",
+      "total_count": null,
+      "selected_dois": [
+        "10.1038/s41597-022-01710-x"
+      ],
+      "note": "Web engine did not expose a stable total. Followed primary publisher result and verified PMID36241754 by direct PubMed retrieval."
+    },
+    {
+      "source": "Web search; primary publisher pages screened",
+      "query": "\"Good enough practices in scientific computing\" Wilson 2017",
+      "total_count": null,
+      "selected_dois": [
+        "10.1371/journal.pcbi.1005510"
+      ],
+      "note": "Used to resolve zero-result title query; verified by DOI query in PubMed."
+    }
+  ],
+  "screening": [
+    {
+      "id": "PMID33499930",
+      "decision": "include",
+      "reason": "Original PRISMA-S reporting framework",
+      "access": "Abstract and first18000 of71160 body characters retrieved via rights-eligible PMC; reporting checklist section inspected, not complete full-text appraisal"
+    },
+    {
+      "id": "PMID34285662",
+      "decision": "duplicate",
+      "reason": "Co-publication of same guidance"
+    },
+    {
+      "id": "PMID35440907",
+      "decision": "context",
+      "reason": "Record counting clarification; abstract inspected, no substantive recommendation beyond main guidance"
+    },
+    {
+      "id": "PMID38479124",
+      "decision": "exclude",
+      "reason": "Unrelated clinical application"
+    },
+    {
+      "id": "PMID34738640",
+      "decision": "exclude",
+      "reason": "Unrelated clinical application"
+    },
+    {
+      "id": "PMID28640806",
+      "decision": "include",
+      "reason": "Foundational reproducible computing practice",
+      "access": "Abstract and primary PLOS article page"
+    },
+    {
+      "id": "PMID36241754",
+      "decision": "include",
+      "reason": "FAIR4RS reuse and metadata",
+      "access": "Abstract and primary Scientific Data article page"
+    },
+    {
+      "id": "doi:10.1038/s41597-026-06705-6",
+      "decision": "include",
+      "reason": "Current tiered execution/documentation/collaboration roadmap",
+      "access": "Primary Scientific Data article page, browsed from FAIR4RS related-source link"
+    }
+  ],
+  "supplementary_lookups": [
+    {
+      "id": "PMID36241754",
+      "method": "PubMed get_articles after identifying in web result"
+    },
+    {
+      "id": "doi:10.1038/s41597-026-06705-6",
+      "method": "Primary publisher link from FAIR4RS article"
+    }
+  ],
+  "limitations": [
+    "Title-query zero results are retrieval outcomes, not evidence that publications do not exist.",
+    "No Embase, Scopus or Web of Science search; no expert search peer review or registered protocol.",
+    "Search reporting and source appraisal used AI assistance; this is not dual human screening."
+  ]
+}

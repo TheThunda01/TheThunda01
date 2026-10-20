@@ -6,6 +6,8 @@ The molecular projects ask how model assumptions, structural evidence, selection
 
 **For a résumé or CV: [github.com/TheThunda01](https://github.com/TheThunda01).**
 
+For the latest practical improvements, evidence searches, and remaining work, see the [research review](RESEARCH_REVIEW.md). Each project now has the same route from its question to a runnable example and a practical-use guide; the [shared standard](PORTFOLIO_STANDARDS.md) explains that structure.
+
 ## Biology and concepts, with runnable checks
 
 The guides below explain the underlying biology or research concepts, the measurement assumptions, and how to interpret the implemented checks.

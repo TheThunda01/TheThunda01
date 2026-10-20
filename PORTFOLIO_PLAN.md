@@ -4,6 +4,8 @@ This ten-project collection connects molecular modeling with the data, statistic
 
 **Portfolio link for a résumé or CV: [github.com/TheThunda01](https://github.com/TheThunda01).** The [project guide](PROJECT_GUIDE.md) explains the rationale, concepts, and limitations of each project.
 
+The [20 October practical-use review](RESEARCH_REVIEW.md) records the current evidence review and implementation changes. Project-specific guides now keep the next improvements alongside explicit acceptance criteria. The [maintenance guide](MAINTENANCE.md) describes a proposed review cadence; ongoing updates are not scheduled automatically.
+
 ## Implemented foundation projects
 
 | Project | Current evidence a reader can inspect |
