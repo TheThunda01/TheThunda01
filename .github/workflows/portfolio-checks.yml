@@ -1,0 +1,40 @@
+name: Check portfolio review copies
+on:
+  push:
+    branches: [portfolio/computational-biology-2026-10]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - project: pasilla-expression-qc
+            demo: python analysis.py --out /tmp/pasilla-results
+          - project: sequence-quality-toolkit
+            demo: python sequence_qc.py --fasta examples/synthetic_sequences.fasta --manifest examples/manifest.csv --output-dir /tmp/sequence-results --dataset-label "Synthetic teaching fixture"
+          - project: surveillance-data-quality
+            demo: python src/audit.py --output /tmp/surveillance-results
+          - project: cell-feature-model-validation
+            demo: python -m cell_validation --output-dir /tmp/cell-results
+    defaults:
+      run:
+        working-directory: portfolio/${{ matrix.project }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies when needed
+        run: |
+          if [ -f requirements.txt ]; then
+            python -m pip install -r requirements.txt
+          fi
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+      - name: Reproduce example
+        run: ${{ matrix.demo }}
