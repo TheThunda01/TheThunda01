@@ -59,7 +59,40 @@ def inspect_markdown(path: Path, expected: list[str]) -> list[str]:
     return errors
 
 
-def inspect_repository(root: Path) -> list[str]:
+def unique_object(pairs):
+    """Reject duplicate keys instead of silently accepting the last value."""
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError(f"duplicate JSON key: {key}")
+        result[key] = value
+    return result
+
+
+def inspect_search_log(path: Path) -> list[str]:
+    errors = []
+    label = path.name
+    try:
+        record = json.loads(path.read_text(encoding="utf-8"), object_pairs_hook=unique_object)
+        if not isinstance(record, dict):
+            raise ValueError("search log must be an object")
+        missing = SEARCH_KEYS - record.keys()
+        if missing:
+            errors.append(label + ": missing " + ", ".join(sorted(missing)))
+        if "search_date" in record:
+            parsed = date.fromisoformat(record["search_date"])
+            if parsed.isoformat() != record["search_date"]:
+                errors.append(label + ": use YYYY-MM-DD")
+        if not isinstance(record.get("searches"), list) or not record.get("searches"):
+            errors.append(label + ": searches must be a nonempty list")
+        if not isinstance(record.get("screening"), (list, dict)) or not record.get("screening"):
+            errors.append(label + ": screening must record decisions")
+    except (OSError, ValueError, TypeError) as exc:
+        errors.append(f"{label}: {exc}")
+    return errors
+
+
+def inspect_repository(root: Path, required_update: str | None = None) -> list[str]:
     errors = []
     for relative, headings in [
         ("README.md", README_HEADINGS),
@@ -67,24 +100,12 @@ def inspect_repository(root: Path) -> list[str]:
         ("docs/literature-review.md", REVIEW_HEADINGS),
     ]:
         errors.extend(inspect_markdown(root / relative, headings))
-    path = root / "docs/search-log.json"
-    try:
-        record = json.loads(path.read_text(encoding="utf-8"))
-        if not isinstance(record, dict):
-            raise ValueError("search log must be an object")
-        missing = SEARCH_KEYS - record.keys()
-        if missing:
-            errors.append("search-log.json: missing " + ", ".join(sorted(missing)))
-        if "search_date" in record:
-            parsed = date.fromisoformat(record["search_date"])
-            if parsed.isoformat() != record["search_date"]:
-                errors.append("search-log.json: use YYYY-MM-DD")
-        if not isinstance(record.get("searches"), list) or not record.get("searches"):
-            errors.append("search-log.json: searches must be a nonempty list")
-        if not isinstance(record.get("screening"), (list, dict)) or not record.get("screening"):
-            errors.append("search-log.json: screening must record decisions")
-    except (OSError, ValueError, TypeError) as exc:
-        errors.append(f"search-log.json: {exc}")
+    paths = {root / "docs/search-log.json"}
+    paths.update((root / "docs").glob("search-update-*.json"))
+    if required_update is not None:
+        paths.add(root / "docs" / f"search-update-{required_update}.json")
+    for path in sorted(paths):
+        errors.extend(inspect_search_log(path))
     return errors
 
 
@@ -96,9 +117,13 @@ def main() -> int:
                         default=Path(__file__).resolve().parents[1] / "portfolio.json")
     parser.add_argument("--output", type=Path,
                         help="Optional JSON report, overwritten if it exists")
+    parser.add_argument("--require-update", type=str,
+                        help="Require a numbered search update in every repository (for example 02)")
     args = parser.parse_args()
     try:
-        manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
+        manifest = json.loads(args.manifest.read_text(encoding="utf-8"), object_pairs_hook=unique_object)
+        if args.require_update is not None and not re.fullmatch(r"[0-9]+", args.require_update):
+            raise ValueError("required update must contain only digits")
         repositories = manifest["repositories"]
         if not isinstance(repositories, list) or not repositories:
             raise ValueError("repositories must be a nonempty list")
@@ -107,7 +132,7 @@ def main() -> int:
             raise ValueError("repository names must be safe directory names")
         if len(set(repositories)) != len(repositories):
             raise ValueError("repository names must be unique")
-        results = [{"repository": slug, "errors": inspect_repository(args.root / slug)}
+        results = [{"repository": slug, "errors": inspect_repository(args.root / slug, args.require_update)}
                    for slug in repositories]
     except (OSError, ValueError, TypeError, KeyError) as exc:
         parser.error(str(exc))

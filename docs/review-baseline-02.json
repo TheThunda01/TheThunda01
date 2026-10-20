@@ -1,0 +1,51 @@
+{
+  "review_date": "2026-10-20",
+  "round": 2,
+  "purpose": "Starting revisions for the second, verification-focused pass; not a latest-version manifest",
+  "repositories": {
+    "pasilla-expression-qc": {
+      "url": "https://github.com/TheThunda01/pasilla-expression-qc",
+      "baseline_commit": "452900e02dfdcfd60d0c6d57788f350535de2b16"
+    },
+    "sequence-quality-toolkit": {
+      "url": "https://github.com/TheThunda01/sequence-quality-toolkit",
+      "baseline_commit": "390c01dc77ee881fb297838c4dbbce1ecf8bdc45"
+    },
+    "cell-feature-model-validation": {
+      "url": "https://github.com/TheThunda01/cell-feature-model-validation",
+      "baseline_commit": "e3e247f812187f5251ea3daa32de2c414c5de976"
+    },
+    "evidencetrail": {
+      "url": "https://github.com/TheThunda01/evidencetrail",
+      "baseline_commit": "bae624d66a9288936f0c5f3ca9eec2820b89e463"
+    },
+    "molecular-solubility-benchmark": {
+      "url": "https://github.com/TheThunda01/molecular-solubility-benchmark",
+      "baseline_commit": "379f16b0920d740f4850ed30f194a0dc6a6298ed"
+    },
+    "enzyme-kinetics-workbench": {
+      "url": "https://github.com/TheThunda01/enzyme-kinetics-workbench",
+      "baseline_commit": "7b6408942c047efb383a9fbef21141e1d77f7798"
+    },
+    "review-compass": {
+      "url": "https://github.com/TheThunda01/review-compass",
+      "baseline_commit": "14e496e97d51784a679096d5c13d531b76507e02"
+    },
+    "protein-structure-evidence": {
+      "url": "https://github.com/TheThunda01/protein-structure-evidence",
+      "baseline_commit": "b8e407858a8b5519d9a99d90462d3c0f9dd69969"
+    },
+    "TheThunda01": {
+      "url": "https://github.com/TheThunda01/TheThunda01",
+      "baseline_commit": "652de54a0a7a8f41d6df9b94a515f43fd023eda3"
+    },
+    "gfp-active-learning": {
+      "url": "https://github.com/TheThunda01/gfp-active-learning",
+      "baseline_commit": "b8028c74fb4decfb52e51ecc6b44b3c15e9031bf"
+    },
+    "surveillance-data-quality": {
+      "url": "https://github.com/TheThunda01/surveillance-data-quality",
+      "baseline_commit": "c7efc28e58caef001b86c587776e7a15712904c7"
+    }
+  }
+}

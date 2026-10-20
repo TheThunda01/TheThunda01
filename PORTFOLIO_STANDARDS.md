@@ -39,3 +39,5 @@ python scripts/check_portfolio_docs.py --root /path/to/cloned-repositories
 ```
 
 The script checks the common README structure, the required practical-use and review sections, search-log metadata, and relative links in those pages. It does not assess the completeness of a search, the quality of a paper, or the truth of a scientific claim. See the [review record](RESEARCH_REVIEW.md) and [maintenance guide](MAINTENANCE.md) for those human review tasks.
+
+Numbered updates preserve earlier search records. The checker validates `docs/search-update-*.json` when present; `--require-update 02` requires that specific update in every checkout. Duplicate JSON keys fail rather than silently replacing an earlier value.

@@ -76,6 +76,21 @@ class DocumentationChecks(unittest.TestCase):
         self.write_log()
         self.assertTrue(any("missing scope" in e for e in inspect_repository(self.root)))
 
+    def test_present_updates_are_checked_and_required_updates_cannot_be_missing(self):
+        errors = inspect_repository(self.root, required_update="02")
+        self.assertTrue(any("search-update-02.json" in e for e in errors))
+        update = self.root / "docs/search-update-02.json"
+        update.write_text(json.dumps(self.log))
+        self.assertEqual(inspect_repository(self.root, required_update="02"), [])
+        invalid = dict(self.log, searches=[])
+        update.write_text(json.dumps(invalid))
+        self.assertTrue(any("search-update-02.json: searches" in e for e in inspect_repository(self.root)))
+
+    def test_duplicate_json_keys_are_rejected(self):
+        path = self.root / "docs/search-log.json"
+        path.write_text('{"search_date":"2026-10-20","search_date":"2026-10-21"}')
+        self.assertTrue(any("duplicate JSON key" in e for e in inspect_repository(self.root)))
+
 
 if __name__ == "__main__":
     unittest.main()

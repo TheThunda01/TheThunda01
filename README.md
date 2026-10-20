@@ -30,6 +30,8 @@ The [project guide](PROJECT_GUIDE.md) explains each project's background, ration
 
 The [research and practical-use review](RESEARCH_REVIEW.md) links the literature searches, current improvements, and remaining work. A [shared documentation standard](PORTFOLIO_STANDARDS.md) makes the projects easier to compare, and the [maintenance guide](MAINTENANCE.md) explains how I would keep their data, dependencies, and evidence up to date.
 
+The [verification update](VERIFICATION_REVIEW.md) follows the next practical priorities: checking calculations and exported artifacts, strengthening input contracts, and preserving workflow history.
+
 ## How I approach the work
 
 The collection develops Python, SQL, JavaScript, statistics, scientific data validation, and reproducible documentation. Public data retain attribution and reuse terms; synthetic examples are labeled. These educational analyses and research-software demonstrations were developed with AI assistance. Tests check specified behavior; they do not establish biological correctness, clinical validity, or autonomous scientific judgment.

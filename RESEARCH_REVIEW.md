@@ -4,6 +4,8 @@
 
 The [baseline revision record](docs/review-baseline.json) identifies the starting commit of each repository. It makes the review's scope explicit even after later updates change the default branch.
 
+A [second verification-focused pass](VERIFICATION_REVIEW.md) on the same date follows the next practical priorities while preserving this first review and its search records.
+
 ## How the evidence was gathered
 
 Each repository has a focused question, a dated `docs/search-log.json`, and a readable `docs/literature-review.md`. Publication discovery starts with PubMed, then uses primary publisher pages, official dataset and software documentation, and selected related repositories. Recent methodological work is considered alongside the original data and foundational methods. Search records distinguish total hits, retrieved records, screened records, cited evidence, and sources inspected only through an abstract.
@@ -31,9 +33,9 @@ The completed changes below target handoff reliability, inspectable assumptions,
 
 ## Verification and next decisions
 
-The original scientific input and result files were preserved. New commands have positive examples and failure-case tests; independent review also checked the claims against what the code actually verifies. That review found and corrected an impossible surveillance release/capture chronology and malformed CSV quoting in the cell-data preflight.
+The original scientific input and result files were preserved. New commands have positive examples and failure-case tests; a separate AI-assisted review also checked the claims against what the code actually verifies. That review found and corrected an impossible surveillance release/capture chronology and malformed CSV quoting in the cell-data preflight.
 
-The next decisions are project-specific. For example, the GFP audit still needs per-observation prediction exports before it can independently recompute model scores. The protein export needs independent viewer round trips before claiming tested viewer compatibility. Cell-file preflight needs a reviewed feature-definition mapping and a suitable independent cohort before external validation is possible. A checksum manifest helps detect accidental changes but does not establish authenticity when a file and its manifest are both replaced.
+At the end of this first pass, priorities included per-observation prediction exports and explicit feature-mapping records. The [second pass](VERIFICATION_REVIEW.md) implements those bounded checks. Independent viewer round trips remain necessary before claiming tested viewer compatibility, and a suitable independent cohort remains necessary for external model validation. A checksum manifest helps detect accidental changes but does not establish authenticity when a file and its manifest are both replaced.
 
 The [documentation checker](scripts/check_portfolio_docs.py) verifies the common section order, required review metadata, and inline relative links across local checkouts. It is a consistency check, not a score for methodological quality.
 

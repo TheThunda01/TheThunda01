@@ -6,6 +6,8 @@ This ten-project collection connects molecular modeling with the data, statistic
 
 The [20 October practical-use review](RESEARCH_REVIEW.md) records the current evidence review and implementation changes. Project-specific guides now keep the next improvements alongside explicit acceptance criteria. The [maintenance guide](MAINTENANCE.md) describes a proposed review cadence; ongoing updates are not scheduled automatically.
 
+The [second verification pass](VERIFICATION_REVIEW.md) completes another set of those priorities, including prediction-level metric reconstruction, checked feature-mapping declarations, and traceable revisions. The remaining backlog is kept in each project's practical-use guide.
+
 ## Implemented foundation projects
 
 | Project | Current evidence a reader can inspect |

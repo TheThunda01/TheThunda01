@@ -1,0 +1,142 @@
+{
+  "search_date": "2026-10-20",
+  "scope": "Second same-day pass: numerical-output verification, execution records and practical scientific-software interfaces",
+  "inclusion_criteria": [
+    "Direct guidance or primary software case studies about reproducible outputs, tests or maintainable interfaces",
+    "Published 2022-01-01 through2026-10-20"
+  ],
+  "exclusion_criteria": [
+    "Incidental clinical-topic matches",
+    "Software outside implemented verification scope",
+    "Secondary reviews when directly relevant primary sources were available"
+  ],
+  "searches": [
+    {
+      "source": "PubMed",
+      "query": "(\"scientific software\"[Title/Abstract] OR \"computational reproducibility\"[Title/Abstract]) AND (verification[Title/Abstract] OR testing[Title/Abstract])",
+      "date_from": "2022/01/01",
+      "date_to": "2026/10/20",
+      "sort": "publication_date",
+      "total_count": 11,
+      "pages": [
+        {
+          "offset": 0,
+          "max_results": 10,
+          "returned_pmids": [
+            "42826375",
+            "42557573",
+            "42207915",
+            "41768044",
+            "41400177",
+            "41186375",
+            "38147039",
+            "40470278",
+            "38651814",
+            "37358895"
+          ]
+        },
+        {
+          "offset": 10,
+          "max_results": 10,
+          "returned_pmids": [
+            "35111923"
+          ]
+        }
+      ],
+      "fully_retrieved": true
+    }
+  ],
+  "screening": [
+    {
+      "pmid": "42826375",
+      "decision": "exclude",
+      "reason": "Clinical adoption study; does not directly inform these offline verification commands",
+      "access": "PubMed title and abstract"
+    },
+    {
+      "pmid": "42557573",
+      "decision": "include",
+      "reason": "Primary reporting-guideline update distinguishes sharing, computational reproducibility, and independent verification",
+      "access": "Abstract and first12000 of27744 PMC body characters; incomplete full text"
+    },
+    {
+      "pmid": "42207915",
+      "decision": "exclude",
+      "reason": "Social-science AI-team experiment; not used to estimate performance of this assistant or portfolio",
+      "access": "PubMed title and abstract"
+    },
+    {
+      "pmid": "41768044",
+      "decision": "exclude",
+      "reason": "Graph-visualization package outside this implementation scope",
+      "access": "PubMed title and abstract"
+    },
+    {
+      "pmid": "41400177",
+      "decision": "context",
+      "reason": "Dataset-readiness protocol; not used to certify candidate data suitability",
+      "access": "PubMed title and abstract"
+    },
+    {
+      "pmid": "41186375",
+      "decision": "include",
+      "reason": "Scientific-software engineering tutorial directly relevant to reproducible tests and maintainability",
+      "access": "PubMed title and abstract"
+    },
+    {
+      "pmid": "38147039",
+      "decision": "exclude",
+      "reason": "Psychological measurement-invariance study outside numerical-output verification scope",
+      "access": "PubMed title and abstract"
+    },
+    {
+      "pmid": "40470278",
+      "decision": "exclude",
+      "reason": "Veterinary diagnostic review; query match was incidental software wording",
+      "access": "PubMed title and abstract"
+    },
+    {
+      "pmid": "38651814",
+      "decision": "include",
+      "reason": "Primary HORTON software case study supports documented interfaces and automated testing",
+      "access": "PubMed title and abstract"
+    },
+    {
+      "pmid": "37358895",
+      "decision": "exclude",
+      "reason": "Clinical protocol; incidental software wording",
+      "access": "PubMed title and abstract"
+    },
+    {
+      "pmid": "35111923",
+      "decision": "exclude",
+      "reason": "Secondary review retained in search history but primary guidance and software case chosen",
+      "access": "PubMed title and abstract"
+    }
+  ],
+  "selected_sources": [
+    {
+      "pmid": "41186375",
+      "doi": "10.1063/5.0293841",
+      "title": "Practical software engineering for software-writing scientists.",
+      "publication_date": "2025 Nov 07"
+    },
+    {
+      "pmid": "38651814",
+      "doi": "10.1063/5.0196638",
+      "title": "The tale of HORTON: Lessons learned in a decade of scientific software development.",
+      "publication_date": "2024 Apr 28"
+    },
+    {
+      "pmid": "42557573",
+      "doi": "10.1186/s41073-026-00223-0",
+      "title": "TOP 2025: An update to the Transparency and Openness Promotion Guidelines.",
+      "publication_date": "2026 Aug 05"
+    }
+  ],
+  "limitations": [
+    "Narrow PubMed query is not an exhaustive literature search",
+    "No new calendar-time monitoring: this was a second scope-specific pass on the same date",
+    "No meta-analysis, independent human screening, or claim of external certification"
+  ]
+}
