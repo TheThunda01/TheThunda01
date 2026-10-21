@@ -12,7 +12,7 @@ Each repository has a focused question, a dated `docs/search-log.json`, and a re
 
 This is a structured rapid review supporting software development. It is not an exhaustive systematic review or a meta-analysis. Queries are focused, some result sets are screened through a bounded page, and subscription databases are not searched. A missing result is not evidence that a method has no literature. No protocol was registered and no independent pair of human reviewers screened the evidence. These limits belong in the record so another reader can decide whether the search is adequate for their question.
 
-The search-record format draws on the reporting ideas in [PRISMA-S](https://pubmed.ncbi.nlm.nih.gov/33499930/): identify the source, preserve the executed query and limits, record dates, and explain record handling. It does not imply PRISMA compliance. The separate [standards search log](docs/standards-search-log.json) records the cross-portfolio guidance search, including zero-result title queries, supplemental lookups, and duplicate publications.
+The search-record format draws on PRISMA-S, the literature-search extension to Preferred Reporting Items for Systematic Reviews and Meta-Analyses, described by [Rethlefsen et al. (2021)](https://pubmed.ncbi.nlm.nih.gov/33499930/): identify the source, preserve the executed query and limits, record dates, and explain record handling. It does not imply PRISMA compliance. The separate [standards search log](docs/standards-search-log.json) records the cross-portfolio guidance search, including zero-result title queries, supplemental lookups, and duplicate publications. Full citation details are in [References](REFERENCES.md).
 
 ## What changes as a result
 

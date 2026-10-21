@@ -119,6 +119,8 @@ def main() -> int:
                         help="Optional JSON report, overwritten if it exists")
     parser.add_argument("--require-update", type=str,
                         help="Require a numbered search update in every repository (for example 02)")
+    parser.add_argument("--editorial-review", type=str,
+                        help="Also check glossary, assumptions, source-audit fields and authored-document links for YYYY-MM-DD")
     args = parser.parse_args()
     try:
         manifest = json.loads(args.manifest.read_text(encoding="utf-8"), object_pairs_hook=unique_object)
@@ -134,10 +136,20 @@ def main() -> int:
             raise ValueError("repository names must be unique")
         results = [{"repository": slug, "errors": inspect_repository(args.root / slug, args.require_update)}
                    for slug in repositories]
+        if args.editorial_review:
+            try:
+                from .editorial_checks import inspect_editorial_review
+            except ImportError:
+                from editorial_checks import inspect_editorial_review
+            for result in results:
+                result["errors"].extend(inspect_editorial_review(args.root / result["repository"], args.editorial_review))
     except (OSError, ValueError, TypeError, KeyError) as exc:
         parser.error(str(exc))
     report = {"schema_version": 1, "checks": "documentation structure and local links only",
               "repositories": results, "passed": all(not r["errors"] for r in results)}
+    if args.editorial_review:
+        report["checks"] = "Documentation structure, authored-document links/anchors and source-audit fields; not scientific validity"
+        report["editorial_review"] = args.editorial_review
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")

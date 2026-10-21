@@ -6,6 +6,8 @@ The portfolio contains thirteen implemented demonstrations. Its four themes are 
 
 The [first practical-use review](RESEARCH_REVIEW.md) and [second verification pass](VERIFICATION_REVIEW.md) record improvements to the original ten projects. Their dated scope remains intact. Project-specific practical-use guides contain remaining work. The [maintenance guide](MAINTENANCE.md) describes a proposed cadence, not an automatic monitoring service.
 
+See the [glossary](docs/glossary.md) for technical terms and the [assumption register](docs/assumptions.md) for collection-level limits.
+
 ## Current priority: depth in the GFP investigation
 
 The [four-policy GFP ablation](https://github.com/TheThunda01/gfp-active-learning/blob/main/experiments/uncertainty_ablation/README.md) is implemented, with a fixed plan, matched starting sets and budgets, and a [results report](https://github.com/TheThunda01/gfp-active-learning/blob/main/experiments/uncertainty_ablation/results/report.md). On reused public outcomes across four seeds, diversity-only had the lowest mean distant error and uncertainty-only the lowest mean local error. The recorded prediction favoring the combined policy at distance was not supported. This is an exploratory finding within one fixed comparison.

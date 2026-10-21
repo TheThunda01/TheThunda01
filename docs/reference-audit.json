@@ -1,0 +1,356 @@
+{
+  "review_date": "2026-10-20",
+  "scope": "Portfolio-level citations in authored profile pages. Project-specific audits cover their own sources and calculations.",
+  "limits": [
+    "Focused reference-and-claim correction, not an exhaustive systematic literature review.",
+    "Full-text access means relevant sections inspected; partial retrieval and abstract-only appraisal are recorded.",
+    "No independent pair of human reviewers appraised the sources. Some work continued on 21 October UTC after the user's 20 October local review date."
+  ],
+  "references": [
+    {
+      "id": "pmid-28640806",
+      "source_type": "publication",
+      "title": "Good enough practices in scientific computing",
+      "authors": [
+        "Greg Wilson",
+        "Jennifer Bryan",
+        "Karen Cranston",
+        "Justin Kitzes",
+        "Lex Nederbragt",
+        "Tracy K Teal"
+      ],
+      "year": 2017,
+      "journal": "PLoS computational biology",
+      "volume": "13",
+      "issue": "6",
+      "pages": "e1005510",
+      "doi": "10.1371/journal.pcbi.1005510",
+      "pmid": "28640806",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28640806/",
+      "checked_on": "2026-10-21",
+      "access_level": "full_text",
+      "metadata_status": "verified",
+      "supported_claims": [
+        "Practical organization, version control, documentation, and reproducibility for small research-computing projects."
+      ],
+      "limitations": [
+        "Relevant accessible sections were inspected; this label does not mean every page or supplement was appraised."
+      ],
+      "corrections": []
+    },
+    {
+      "id": "pmid-36241754",
+      "source_type": "publication",
+      "title": "Introducing the FAIR Principles for research software",
+      "authors": [
+        "Michelle Barker",
+        "et al."
+      ],
+      "year": 2022,
+      "journal": "Scientific data",
+      "volume": "9",
+      "issue": "1",
+      "pages": "622",
+      "doi": "10.1038/s41597-022-01710-x",
+      "pmid": "36241754",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36241754/",
+      "checked_on": "2026-10-21",
+      "access_level": "full_text",
+      "metadata_status": "verified",
+      "supported_claims": [
+        "FAIR4RS provides Findable, Accessible, Interoperable, Reusable principles tailored to research software."
+      ],
+      "limitations": [
+        "Relevant accessible sections were inspected; this label does not mean every page or supplement was appraised."
+      ],
+      "corrections": []
+    },
+    {
+      "id": "pmid-41820417",
+      "source_type": "publication",
+      "title": "CODE beyond FAIR: a roadmap for reusable research software",
+      "authors": [
+        "Roberto Di Cosmo",
+        "et al."
+      ],
+      "year": 2026,
+      "journal": "Scientific data",
+      "volume": "13",
+      "issue": "1",
+      "pages": "514",
+      "doi": "10.1038/s41597-026-06705-6",
+      "pmid": "41820417",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41820417/",
+      "checked_on": "2026-10-21",
+      "access_level": "full_text",
+      "metadata_status": "corrected",
+      "supported_claims": [
+        "CODE organizes reusable-software recommendations around Open, Document, Execute, and Collaborate; tests do not prove correctness."
+      ],
+      "limitations": [
+        "Relevant accessible sections were inspected; this label does not mean every page or supplement was appraised."
+      ],
+      "corrections": [
+        "Expanded CODE categories precisely; distinguished PubMed's March date from the publisher's April version-of-record date."
+      ]
+    },
+    {
+      "id": "pmid-42557573",
+      "source_type": "publication",
+      "title": "TOP 2025: An update to the Transparency and Openness Promotion Guidelines",
+      "authors": [
+        "Sean Grant",
+        "et al."
+      ],
+      "year": 2026,
+      "journal": "Research integrity and peer review",
+      "volume": "11",
+      "issue": "1",
+      "pages": "40",
+      "doi": "10.1186/s41073-026-00223-0",
+      "pmid": "42557573",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42557573/",
+      "checked_on": "2026-10-21",
+      "access_level": "abstract",
+      "metadata_status": "corrected",
+      "supported_claims": [
+        "TOP 2025 distinguishes research practices, verification practices, and verification studies."
+      ],
+      "limitations": [
+        "Metadata and abstract were inspected for this portfolio-level review; detailed methods and supplementary claims are not inferred from the abstract."
+      ],
+      "corrections": [
+        "Used author–year citation and distinguished the TOP 2025 guideline name from its 2026 article publication."
+      ]
+    },
+    {
+      "id": "pmid-41186375",
+      "source_type": "publication",
+      "title": "Practical software engineering for software-writing scientists",
+      "authors": [
+        "Raúl P Peláez"
+      ],
+      "year": 2025,
+      "journal": "The Journal of chemical physics",
+      "volume": "163",
+      "issue": "17",
+      "pages": "171502",
+      "doi": "10.1063/5.0293841",
+      "pmid": "41186375",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41186375/",
+      "checked_on": "2026-10-21",
+      "access_level": "abstract",
+      "metadata_status": "verified",
+      "supported_claims": [
+        "Broad practice context for version control, testing, documentation, continuous integration, and packaging."
+      ],
+      "limitations": [
+        "Metadata and abstract were inspected for this portfolio-level review; detailed methods and supplementary claims are not inferred from the abstract."
+      ],
+      "corrections": []
+    },
+    {
+      "id": "pmid-38651814",
+      "source_type": "publication",
+      "title": "The tale of HORTON: Lessons learned in a decade of scientific software development",
+      "authors": [
+        "Matthew Chan",
+        "et al."
+      ],
+      "year": 2024,
+      "journal": "The Journal of chemical physics",
+      "volume": "160",
+      "issue": "16",
+      "pages": "162501",
+      "doi": "10.1063/5.0196638",
+      "pmid": "38651814",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38651814/",
+      "checked_on": "2026-10-21",
+      "access_level": "abstract",
+      "metadata_status": "verified",
+      "supported_claims": [
+        "A case study of scientific-software development and maintenance experience in HORTON."
+      ],
+      "limitations": [
+        "Metadata and abstract were inspected for this portfolio-level review; detailed methods and supplementary claims are not inferred from the abstract."
+      ],
+      "corrections": []
+    },
+    {
+      "id": "pmid-33499930",
+      "source_type": "publication",
+      "title": "PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews",
+      "authors": [
+        "Melissa L Rethlefsen",
+        "et al."
+      ],
+      "year": 2021,
+      "journal": "Systematic reviews",
+      "volume": "10",
+      "issue": "1",
+      "pages": "39",
+      "doi": "10.1186/s13643-020-01542-z",
+      "pmid": "33499930",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33499930/",
+      "checked_on": "2026-10-21",
+      "access_level": "full_text",
+      "metadata_status": "corrected",
+      "supported_claims": [
+        "PRISMA-S provides reporting guidance for literature searches, including sources and reproducible search details."
+      ],
+      "limitations": [
+        "Relevant accessible sections were inspected; this label does not mean every page or supplement was appraised."
+      ],
+      "corrections": [
+        "Expanded PRISMA-S and supplied complete bibliographic details."
+      ]
+    },
+    {
+      "id": "pmid-16478465",
+      "source_type": "publication",
+      "title": "Effects of sequestration on signal transduction cascades",
+      "authors": [
+        "Nils Blüthgen",
+        "Frank J Bruggeman",
+        "Stefan Legewie",
+        "Hanspeter Herzel",
+        "Hans V Westerhoff",
+        "Boris N Kholodenko"
+      ],
+      "year": 2006,
+      "journal": "The FEBS journal",
+      "volume": "273",
+      "issue": "5",
+      "pages": "895-906",
+      "doi": "10.1111/j.1742-4658.2006.05105.x",
+      "pmid": "16478465",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16478465/",
+      "checked_on": "2026-10-21",
+      "access_level": "abstract",
+      "metadata_status": "verified",
+      "supported_claims": [
+        "In the models examined, explicitly including sequestration can change signal sensitivity and oscillatory behavior."
+      ],
+      "limitations": [
+        "Metadata and abstract were inspected for this portfolio-level review; detailed methods and supplementary claims are not inferred from the abstract."
+      ],
+      "corrections": []
+    },
+    {
+      "id": "pmid-39134886",
+      "source_type": "publication",
+      "title": "Yeast9: a consensus genome-scale metabolic model for S. cerevisiae curated by the community",
+      "authors": [
+        "Chengyu Zhang",
+        "et al."
+      ],
+      "year": 2024,
+      "journal": "Molecular systems biology",
+      "volume": "20",
+      "issue": "10",
+      "pages": "1134-1150",
+      "doi": "10.1038/s44320-024-00060-7",
+      "pmid": "39134886",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39134886/",
+      "checked_on": "2026-10-21",
+      "access_level": "abstract",
+      "metadata_status": "verified",
+      "supported_claims": [
+        "Yeast9 is a community-curated genome-scale model; the paper describes its ecosystem rather than the exact later v9.1.1 snapshot."
+      ],
+      "limitations": [
+        "Metadata and abstract were inspected for this portfolio-level review; detailed methods and supplementary claims are not inferred from the abstract."
+      ],
+      "corrections": []
+    },
+    {
+      "id": "pmid-10712587",
+      "source_type": "publication",
+      "title": "Negative feedback and ultrasensitivity can bring about oscillations in the mitogen-activated protein kinase cascades",
+      "authors": [
+        "B N Kholodenko"
+      ],
+      "year": 2000,
+      "journal": "European journal of biochemistry",
+      "volume": "267",
+      "issue": "6",
+      "pages": "1583-8",
+      "doi": "10.1046/j.1432-1327.2000.01197.x",
+      "pmid": "10712587",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10712587/",
+      "checked_on": "2026-10-21",
+      "access_level": "abstract",
+      "metadata_status": "corrected",
+      "supported_claims": [
+        "The modeled combination of negative feedback and ultrasensitivity can produce oscillations in a MAPK cascade."
+      ],
+      "limitations": [
+        "Metadata and abstract were inspected for this portfolio-level review; detailed methods and supplementary claims are not inferred from the abstract."
+      ],
+      "corrections": [
+        "Added an explicit citation for the named Kholodenko model."
+      ]
+    },
+    {
+      "id": "yeast-gem-v9-1-1",
+      "source_type": "model_release",
+      "title": "yeast-GEM v9.1.1",
+      "authors": "SysBioChalmers and yeast-GEM contributors",
+      "year": 2026,
+      "url": "https://github.com/SysBioChalmers/yeast-GEM/releases/tag/v9.1.1",
+      "version": "v9.1.1",
+      "checked_on": "2026-10-21",
+      "access_level": "official_documentation",
+      "metadata_status": "verified",
+      "supported_claims": [
+        "Release identity and CC BY 4.0 attribution terms."
+      ],
+      "limitations": [
+        "Release notes and license were checked; the binary model was not independently re-downloaded in this profile-level audit. See the project audit for local model verification."
+      ],
+      "corrections": [],
+      "alternate_urls": [
+        "https://raw.githubusercontent.com/SysBioChalmers/yeast-GEM/v9.1.1/LICENSE.md"
+      ]
+    },
+    {
+      "id": "biomodels-10",
+      "source_type": "model_encoding",
+      "title": "BIOMD0000000010: Kholodenko2000 MAPK feedback model",
+      "authors": "BioModels",
+      "year": 2014,
+      "url": "https://github.com/biomodels/BIOMD0000000010/tree/d95a205b39b7e5bdc172a368534cda60c74ab420",
+      "version": "d95a205b39b7e5bdc172a368534cda60c74ab420",
+      "checked_on": "2026-10-21",
+      "access_level": "official_documentation",
+      "metadata_status": "verified",
+      "supported_claims": [
+        "Pinned encoding identity, associated paper, and CC0 dedication for the encoded model."
+      ],
+      "limitations": [
+        "The encoding's dedication is distinct from rights in the associated journal article. The project's numerical checks are implementation evidence, not a finding of this README."
+      ],
+      "corrections": []
+    },
+    {
+      "id": "lincs-cell-painting",
+      "source_type": "dataset_repository",
+      "title": "LINCS Cell Painting profile data repository",
+      "authors": "Natoli T et al.; Broad Institute contributors",
+      "year": 2021,
+      "url": "https://github.com/broadinstitute/lincs-cell-painting/tree/061870127481dcd73c29df85ebcfddeac2ed0828",
+      "version": "061870127481dcd73c29df85ebcfddeac2ed0828 (2022 commit); v1 archive (2021)",
+      "doi": "10.5281/zenodo.5008187",
+      "checked_on": "2026-10-21",
+      "access_level": "official_documentation",
+      "metadata_status": "verified",
+      "supported_claims": [
+        "Dataset and processing-repository identity; data/results/figures use CC0 and upstream source code uses BSD 3-Clause."
+      ],
+      "limitations": [
+        "The upstream full dataset and the local selected subset are different scopes. Individual subset counts are project calculations."
+      ],
+      "corrections": []
+    }
+  ]
+}

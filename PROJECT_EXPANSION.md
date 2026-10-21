@@ -4,6 +4,8 @@ The latest three projects add coupled metabolic networks, time-dependent signali
 
 My aim is to connect biological measurements, mechanistic models, and statistical learning in ways I can explain and reproduce. These projects use different systems. They do not report laboratory experiments that I conducted or form one experimentally validated discovery pipeline.
 
+The [glossary](docs/glossary.md) explains the technical terms below; each linked project has its own assumptions and source audit.
+
 ## What each project adds
 
 | Project | Scientific question | Concepts | Practical role and boundary |
@@ -26,9 +28,9 @@ A useful next step would compare results with suitably matched independent flux 
 
 ## MAPK dynamics lab
 
-The input is the CC0 [BioModels BIOMD0000000010 encoding](https://github.com/biomodels/BIOMD0000000010/tree/d95a205b39b7e5bdc172a368534cda60c74ab420) of Kholodenko's feedback model. The implementation checks its eight species, ten reaction rates, conserved totals, source equations, and agreement between numerical formulations.
+The input is the CC0 [BioModels BIOMD0000000010 encoding](https://github.com/biomodels/BIOMD0000000010/tree/d95a205b39b7e5bdc172a368534cda60c74ab420) of the feedback model described by [Kholodenko (2000)](https://pubmed.ncbi.nlm.nih.gov/10712587/). The implementation checks its eight species, ten reaction rates, conserved totals, source equations, and agreement between numerical formulations.
 
-The learning experiment compares 49 hypotheses over two parameter directions, holding other parameters fixed. Twenty matched-model seeds compare variance-guided, random, and fixed observation schedules with the same 12-observation budget. Six off-grid noise repeats examine one way the finite hypothesis set can be wrong. Observation, selection, posterior, and metric tables make the result inspectable.
+The learning experiment compares 49 hypotheses over two parameter directions, holding other parameters fixed. Twenty matched-model seeds compare variance-guided, random, and fixed observation schedules with the same 12-observation budget. Six off-grid noise repeats examine one way the finite hypothesis set can be wrong: the true values fall between discrete candidates while remaining inside their parameter ranges. This tests discretization, not extrapolation beyond those ranges. Observation, selection, posterior, and metric tables make the result inspectable.
 
 The variance-guided rule performs better on average in the committed matched-model example. This is a bounded simulation result: its score is posterior-weighted prediction variance, not exact expected information gain or proof of an optimal design. The posterior depends on the grid, noise model, and fixed parameters. [Blüthgen et al. (2006)](https://pubmed.ncbi.nlm.nih.gov/16478465/) show why omitted enzyme–substrate sequestration can change this model class's dynamics. An internally consistent trajectory does not confirm that real cells follow these equations.
 

@@ -1,0 +1,62 @@
+{
+  "review_date": "2026-10-20",
+  "scope": "Starting heads for the scientific and editorial review; project results and earlier search records remain versioned.",
+  "repositories": {
+    "enzyme-kinetics-workbench": {
+      "head": "6471b70f5215b5c6247552dffc52e718d621b944",
+      "tree": "1252a78203eda21b8ac3aeac0425d9b834760c9c"
+    },
+    "yeast-flux-workbench": {
+      "head": "d4d5f77e80c3c9cc376764769a962af4396f0158",
+      "tree": "9fc7cd7163f4c037b165d9ebd6244794e161257f"
+    },
+    "mapk-dynamics-lab": {
+      "head": "2b308a9fcfbc9405818b2aefe9af0ad6988e4cf3",
+      "tree": "4f6a8efb9a5e2b3a81cc4cd4b7871942461f6eee"
+    },
+    "protein-structure-evidence": {
+      "head": "6df7ad636e5b9d91c4ebeb9617b9122eb82d7e02",
+      "tree": "3088c058e0dabbc3c04726f125ccb616bc0a2dd1"
+    },
+    "gfp-active-learning": {
+      "head": "585234b3330142ee4226bd975a94076331e09162",
+      "tree": "14401560954317afeefa6aa2ed740e891e5111f2"
+    },
+    "molecular-solubility-benchmark": {
+      "head": "1843601252db808ce8e63d8944e1b2f43e364474",
+      "tree": "118fe8f3418d24e58f1b08b26030065ea224eca0"
+    },
+    "morphology-transfer-benchmark": {
+      "head": "4bc77efc9fc409e53e0fff44eca8ba17b41251af",
+      "tree": "dda00716b5f099e0e36de0beace438efa7af336b"
+    },
+    "pasilla-expression-qc": {
+      "head": "c9eb0f9f22500594fa5a2f69cb495699b5a2ab24",
+      "tree": "356d8ea895cda898421f5099e266bfc27e29658f"
+    },
+    "sequence-quality-toolkit": {
+      "head": "529dfc03a2a2b96b62358fa7161694cebf2b1410",
+      "tree": "98a202d8245a064859c60318dda7dddab5068f02"
+    },
+    "surveillance-data-quality": {
+      "head": "d19b42d98cf5b641e25c7fbbfbbbaf5d01c9f484",
+      "tree": "712be9351a7d2e5819517a8f816b7feff9e363e6"
+    },
+    "cell-feature-model-validation": {
+      "head": "506addb5b843ea4601f29645ffa966c31a8e6646",
+      "tree": "ba13baa7fba211db6088d2fd39d155948e1c8ca5"
+    },
+    "evidencetrail": {
+      "head": "8fa41859fc3fc68990c1c1fd68f0938f5d00bba3",
+      "tree": "887a1695466149e2ceb61e060f965de2eee7305a"
+    },
+    "review-compass": {
+      "head": "475a41530cc68d6a9cc6c568584411fbcdfc8856",
+      "tree": "98921119b0abe574361c7dcde5672b0e82d0e63d"
+    },
+    "TheThunda01": {
+      "head": "792452990afd8be4930a0c3df2e4ec2b33c4b80e",
+      "tree": "9e3693875d0546234d5bd0c8cc7d6fe52d5bc959"
+    }
+  }
+}

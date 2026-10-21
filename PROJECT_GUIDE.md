@@ -8,6 +8,8 @@ The collection reflects my interests in computational biology, AI, mathematical 
 
 The [latest expansion](PROJECT_EXPANSION.md) explains what the new projects add and where they still need development. The [research review](RESEARCH_REVIEW.md) and [verification update](VERIFICATION_REVIEW.md) preserve the earlier ten-project review history. The [shared standard](PORTFOLIO_STANDARDS.md) describes the documentation expected before a new project is presented as complete.
 
+The [glossary](docs/glossary.md) defines the terms below, including green fluorescent protein (GFP), mitogen-activated protein kinase (MAPK), and the statistical methods. The [assumption register](docs/assumptions.md) explains the scope of the collection.
+
 ## Current learning investigation: GFP
 
 The [completed policy ablation](https://github.com/TheThunda01/gfp-active-learning/blob/main/experiments/uncertainty_ablation/README.md) isolates random, uncertainty-only, diversity-only, and combined selection while holding the starting labels, budgets, and model fixed. In this four-seed extension, diversity-only had the lowest mean distant error and uncertainty-only the lowest mean local error. The recorded combined-at-distance prediction was not supported. These are exploratory results on reused public outcomes, not a new blind evaluation or evidence of a universal winning policy. See the [report](https://github.com/TheThunda01/gfp-active-learning/blob/main/experiments/uncertainty_ablation/results/report.md).
@@ -52,7 +54,7 @@ It compares the full measured range with low-concentration subsets, inspects res
 
 ### Yeast flux workbench
 
-Metabolic reactions share substrates and products, so a change in one part of a network can constrain other pathways. This project asks which growth and exchange-flux conclusions remain feasible when oxygen uptake and the required growth fraction change. It extends a small enzyme-rate model to a coupled network.
+Metabolic reactions share substrates and products, so a change in one part of a network can constrain other pathways. This project asks which growth and exchange-flux conclusions remain feasible when oxygen uptake and the required growth fraction change. It extends the portfolio from individual-enzyme kinetics to network modeling.
 
 The implementation uses a pinned Yeast-GEM v9.1.1 snapshot, sparse linear optimization, and selected-reaction flux variability analysis. Six declared scenarios include a deliberately infeasible diagnostic. Saved fluxes are checked for balance and bounds, and extrema are compared using a different solver algorithm. Key themes are **stoichiometry, conservation, optimization, alternative solutions, and numerical assumptions**. Feasible ranges are not confidence intervals or measured fluxes; the published model's performance does not automatically validate this analysis.
 
@@ -63,7 +65,7 @@ The implementation uses a pinned Yeast-GEM v9.1.1 snapshot, sparse linear optimi
 
 Signaling pathways change over time, and similar-looking trajectories can leave several parameter explanations open. This project asks which simulated observations help distinguish those explanations in a compact, published MAPK cascade.
 
-It translates a pinned BioModels encoding, checks conservation and numerical agreement, and updates a finite grid of two-parameter hypotheses. A variance-guided selection rule is compared with random and fixed schedules under the same virtual measurement budget. An off-grid case exposes one limitation of the assumed hypothesis set. Key themes are **dynamics, feedback, Bayesian inference, identifiability, and sequential decisions**. All observations are simulated. The acquisition rule is a heuristic, and successful recovery within this model does not validate a real signaling mechanism or laboratory experiment.
+It translates a pinned BioModels encoding, checks conservation and numerical agreement, and updates a finite grid of two-parameter hypotheses. A variance-guided selection rule is compared with random and fixed schedules under the same virtual measurement budget. An off-grid case, with true values between candidates but inside their parameter ranges, exposes the limitations of a finite hypothesis set. Key themes are **dynamics, feedback, Bayesian inference, identifiability, and sequential decisions**. All observations are simulated. The acquisition rule is a heuristic, and successful recovery within this model does not validate a real signaling mechanism or laboratory experiment.
 
 [Background and sources](https://github.com/TheThunda01/mapk-dynamics-lab/blob/main/docs/project-context.md)
 
@@ -98,7 +100,7 @@ It computes descriptors from SMILES, keeps canonical duplicate structures togeth
 
 Cellular morphology provides an indirect view of a cell's response to a perturbation. This project asks whether public image-derived profiles can recover annotated relationships between compounds withheld from model development. It complements chemical-property prediction by studying a cellular phenotype.
 
-A compact LINCS Cell Painting subset preserves raw well-level measurements and DMSO controls. The workflow audits annotations and support, groups related chemical identities, fits preprocessing on training compounds, and evaluates retrieval and simple classifiers. Seven supported mechanism classes remain from eight prespecified candidates; exclusions stay visible. Key themes are **phenotypic profiling, grouped evaluation, batch effects, representation, and annotation uncertainty**. Retrieval excludes shared identities and plate maps. The classifier still faces plate and position confounding, and a similar phenotype does not establish a direct target, mechanism, or therapeutic benefit.
+A compact LINCS Cell Painting subset preserves raw well-level measurements and DMSO controls. The workflow audits annotations and support, groups related chemical identities, normalizes each relevant plate using its DMSO controls, fits subsequent preprocessing on training compounds, and evaluates retrieval and simple classifiers. Seven supported mechanism classes remain from eight prespecified candidates; exclusions stay visible. Key themes are **phenotypic profiling, grouped evaluation, batch effects, representation, and annotation uncertainty**. Retrieval excludes shared identities and plate maps. The classifier still faces plate and position confounding, and a similar phenotype does not establish a direct target, mechanism, or therapeutic benefit.
 
 [Background and sources](https://github.com/TheThunda01/morphology-transfer-benchmark/blob/main/docs/project-context.md)
 

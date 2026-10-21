@@ -14,7 +14,7 @@ Every project README follows the same sequence:
 6. **Documentation** — links to the context, biology or concepts, methods, sources, practical-use guide, and literature review.
 7. **Development and reuse** — tests, contribution guidance, and separate code/data terms where needed.
 
-The practical-use guide describes an input/output contract, a worked use case, checks before relying on a result, known limits, and prioritized improvements with acceptance criteria. Each literature review records its question, search strategy, evidence, implementation consequences, remaining work, and review limitations. `docs/search-log.json` preserves the search metadata and screening decisions in a machine-readable form.
+The practical-use guide describes an input/output contract, a worked use case, checks before relying on a result, known limits, and prioritized improvements with acceptance criteria. Each literature review records its question, search strategy, evidence, implementation consequences, remaining work, and review limitations. `docs/search-log.json` preserves the search metadata and screening decisions in a machine-readable form. Each project also links a glossary, assumption register, reference audit, and dated correction record from its README.
 
 ## Evidence and language
 
@@ -22,7 +22,11 @@ Scientific statements should point to an appropriate source. A method paper can 
 
 Write plainly and explain the biological or statistical reason for a choice. Prefer an observable statement such as “the parser rejects duplicate sample IDs” over a broad label such as “production ready.” Keep exploratory findings, predictions, and experimentally established results separate.
 
-This approach draws on [Wilson et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28640806/) for reproducible research organization and [Barker et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/36241754/) for software metadata and reuse. The [CODE roadmap (2026)](https://doi.org/10.1038/s41597-026-06705-6) adds a useful emphasis on execution, documentation, and collaboration. These are practice frameworks, not evidence that these projects have met an external certification standard.
+Define specialist terms and abbreviations at their first meaningful use, then provide a project-specific glossary for reference. An assumption register explains each material choice, its evidence or practical rationale, checks performed, and the consequences if it fails. A computational convenience should not acquire a biological justification just because it makes an example easier to run.
+
+Use descriptive author–year citations. Give papers a verified title, author or first author with “et al.”, year, journal, volume, issue where available, pages or article number, and DOI/PMID where verified. Give datasets and software their organization, version or commit, canonical link, access date, and separate reuse terms. Record source access honestly: reading an abstract is not a full-text appraisal. The reference audit links each source to supported claims, corrections, and limits. Historical search records and frozen outputs retain their original context; current guidance explains later corrections.
+
+This approach draws on [Wilson et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28640806/) for reproducible research organization and [Barker et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/36241754/) for software metadata and reuse. The CODE roadmap of [Di Cosmo et al. (2026)](https://doi.org/10.1038/s41597-026-06705-6) organizes recommendations around Open, Document, Execute, and Collaborate. These are practice frameworks, not evidence that these projects have met an external certification standard. See the [complete references](REFERENCES.md).
 
 ## Moving toward professional use
 
@@ -32,7 +36,7 @@ A proposed extension should state what changes, why it matters, and how success 
 
 ## Checking consistency
 
-After cloning the ten repositories into one directory, run:
+After cloning the thirteen repositories into one directory, run:
 
 ```bash
 python scripts/check_portfolio_docs.py --root /path/to/cloned-repositories
@@ -41,3 +45,5 @@ python scripts/check_portfolio_docs.py --root /path/to/cloned-repositories
 The script checks the common README structure, the required practical-use and review sections, search-log metadata, and relative links in those pages. It does not assess the completeness of a search, the quality of a paper, or the truth of a scientific claim. See the [review record](RESEARCH_REVIEW.md) and [maintenance guide](MAINTENANCE.md) for those human review tasks.
 
 Numbered updates preserve earlier search records. The checker validates `docs/search-update-*.json` when present; `--require-update 02` requires that specific update in every checkout. Duplicate JSON keys fail rather than silently replacing an earlier value.
+
+For the scientific and editorial review, add `--editorial-review 2026-10-20`. This checks the presence and schema of the review files and local links in authored documentation. It cannot establish that every term is understandable, every assumption has been found, or a citation supports its claim; those require reading and judgment.
