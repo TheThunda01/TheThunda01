@@ -28,3 +28,11 @@ Preserve the earlier search record. Append a new dated run with the source, exac
 If a later result was used to choose a model or threshold, that result is now part of development. A fresh claim about generalization needs an appropriate new evaluation. If a paper changes the interpretation without requiring a code change, update the explanation and cite the reason.
 
 The [project-specific practical-use guides](RESEARCH_REVIEW.md) contain the next improvements and acceptance criteria. They are a working backlog, not evidence that those improvements have been implemented.
+
+## Historical portfolio branch
+
+`portfolio/computational-biology-2026-10` preserves the early four-project layout. Those projects now have newer standalone repositories linked from the profile. Keep the branch as historical context; do not merge its older layout into the current profile. The current collection is defined by `portfolio.json`.
+
+## Platform checks
+
+Use a fresh Windows checkout as well as Linux CI when changing byte-level input checks or report writers. Files protected by a checksum need an explicit Git line-ending policy. Write generated text as UTF-8. Tests that specifically require symbolic links should report a clear capability skip when Windows cannot create them, while ordinary file-protection assertions still run. Keep a CI job that exercises the link-specific tests.

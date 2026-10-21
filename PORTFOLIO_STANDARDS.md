@@ -44,9 +44,9 @@ python scripts/check_portfolio_docs.py --root /path/to/cloned-repositories
 
 The script checks the common README structure, the required practical-use and review sections, search-log metadata, and relative links in those pages. It does not assess the completeness of a search, the quality of a paper, or the truth of a scientific claim. See the [review record](RESEARCH_REVIEW.md) and [maintenance guide](MAINTENANCE.md) for those human review tasks.
 
-Numbered updates preserve earlier search records. The checker validates `docs/search-update-*.json` when present; `--require-update 02` requires that specific update in every checkout. Duplicate JSON keys fail rather than silently replacing an earlier value.
+Numbered updates preserve earlier search records. The checker validates `docs/search-update-*.json` when present. `--require-update 02` requires that particular update in every repository named in the selected manifest; use `--manifest portfolio-round2.json` for the original ten-project second pass. The three later projects have their own initial searches. Duplicate JSON keys fail rather than silently replacing an earlier value.
 
-For the scientific and editorial review, add `--editorial-review 2026-10-20`. This checks the presence and schema of the review files and local links in authored documentation. It cannot establish that every term is understandable, every assumption has been found, or a citation supports its claim; those require reading and judgment.
+For the current scientific and editorial review, add `--editorial-review 2026-10-21`. The earlier `2026-10-20` records remain available. This checks review-file presence, source-audit fields, and local links in authored documentation. It cannot establish that every term is understandable, every assumption has been found, or a citation supports its claim; those require reading and judgment.
 
 ## Formula rendering
 
