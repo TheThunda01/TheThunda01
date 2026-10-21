@@ -3,9 +3,12 @@
   "owner": "TheThunda01",
   "repositories": [
     "enzyme-kinetics-workbench",
+    "yeast-flux-workbench",
+    "mapk-dynamics-lab",
     "protein-structure-evidence",
     "gfp-active-learning",
     "molecular-solubility-benchmark",
+    "morphology-transfer-benchmark",
     "pasilla-expression-qc",
     "sequence-quality-toolkit",
     "surveillance-data-quality",

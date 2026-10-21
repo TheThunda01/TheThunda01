@@ -1,16 +1,28 @@
 # A quick guide to the projects
 
-The ten projects connect two kinds of work: building models of molecular measurements, and making the data and research decisions behind those models easier to inspect. The collection reflects my interests in computational biology, AI, mathematical modeling, and experimental molecular biology. It is a foundation for future research, not a claim that I have conducted new laboratory experiments or established new mechanisms.
+This portfolio connects mechanistic and systems modeling, molecular and cellular learning, measurement quality, and evidence workflows. Thirteen repositories contain runnable demonstrations, including the latest additions on yeast metabolism, MAPK dynamics, and cellular morphology.
 
-The molecular projects ask how model assumptions, structural evidence, selection budgets, and chemical similarity affect an answer. The six foundation projects support that work through data quality, statistical evaluation, reproducibility, and evidence review. Together they move from a biological question to an inspectable analysis without treating a prediction as an experimental result.
+The collection reflects my interests in computational biology, AI, mathematical modeling, and experimental molecular biology. It is a foundation for future research, not a claim that I have conducted new laboratory experiments or established new mechanisms. The case studies involve different systems and datasets; together they develop complementary skills rather than form one validated pipeline.
 
 **For a résumé or CV: [github.com/TheThunda01](https://github.com/TheThunda01).**
 
-For the latest practical improvements, evidence searches, and remaining work, see the [research review](RESEARCH_REVIEW.md). Each project now has the same route from its question to a runnable example and a practical-use guide; the [shared standard](PORTFOLIO_STANDARDS.md) explains that structure.
+The [latest expansion](PROJECT_EXPANSION.md) explains what the new projects add and where they still need development. The [research review](RESEARCH_REVIEW.md) and [verification update](VERIFICATION_REVIEW.md) preserve the earlier ten-project review history. The [shared standard](PORTFOLIO_STANDARDS.md) describes the documentation expected before a new project is presented as complete.
 
-## Biology and concepts, with runnable checks
+## Current learning investigation: GFP
 
-The guides below explain the underlying biology or research concepts, the measurement assumptions, and how to interpret the implemented checks.
+The [completed policy ablation](https://github.com/TheThunda01/gfp-active-learning/blob/main/experiments/uncertainty_ablation/README.md) isolates random, uncertainty-only, diversity-only, and combined selection while holding the starting labels, budgets, and model fixed. In this four-seed extension, diversity-only had the lowest mean distant error and uncertainty-only the lowest mean local error. The recorded combined-at-distance prediction was not supported. These are exploratory results on reused public outcomes, not a new blind evaluation or evidence of a universal winning policy. See the [report](https://github.com/TheThunda01/gfp-active-learning/blob/main/experiments/uncertainty_ablation/results/report.md).
+
+The next learning checkpoints remain to be completed:
+
+- **Personal explanation:** explain why the comparison is fair, what the error and disagreement measures mean, and what the result does not establish.
+- **Independent extension:** develop one bounded follow-up, write the expected outcome and comparison before running it, and identify the decisions and code I contributed.
+- **Failure analysis:** inspect where the model or selection rule fails, test a competing explanation, and retain negative or inconclusive results.
+
+Once those checkpoints are complete, deepen the existing MAPK closed-loop simulation with a defined question and failure case before adding a repository.
+
+## Biology and concepts
+
+The guides explain the biological measurements, model assumptions, and implemented checks.
 
 | Project | Concept guide | Practical focus |
 | --- | --- | --- |
@@ -24,10 +36,13 @@ The guides below explain the underlying biology or research concepts, the measur
 | Cell-feature model validation | [Cell morphology, classification, calibration, and prevalence](https://github.com/TheThunda01/cell-feature-model-validation/blob/main/docs/biology-and-concepts.md) | Conditional predictive-value scenarios under explicitly hypothetical prevalence |
 | EvidenceTrail | [Studies, reports, missingness, effects, and certainty](https://github.com/TheThunda01/evidencetrail/blob/main/docs/biology-and-concepts.md) | Field-level source-locator completeness and downloadable summaries |
 | Review Compass | [Question framing, retrieval, screening, and synthesis](https://github.com/TheThunda01/review-compass/blob/main/docs/biology-and-concepts.md) | Exact-query structural audit with file fingerprints; search terms retained beyond six entries |
+| Yeast flux workbench | [Metabolism and flux guide](https://github.com/TheThunda01/yeast-flux-workbench/blob/main/docs/biology-and-concepts.md) | Constraint-based network modeling, selected flux ranges, and solver checks |
+| MAPK dynamics lab | [Dynamics and information guide](https://github.com/TheThunda01/mapk-dynamics-lab/blob/main/docs/biology-and-concepts.md) | Time courses, feedback, Bayesian updating, and virtual observations |
+| Morphology transfer benchmark | [Morphology and transfer guide](https://github.com/TheThunda01/morphology-transfer-benchmark/blob/main/docs/biology-and-concepts.md) | Control-normalized public profiles and compound-level retrieval/evaluation |
 
-These extensions do not establish biological mechanisms, clinical utility, or validated automated review decisions. The guides explain the specific limits rather than treating a passing software check as scientific confirmation.
+## Mechanistic and systems modeling
 
-## Enzyme kinetics workbench
+### Enzyme kinetics workbench
 
 A curved relationship between substrate concentration and reaction rate can be summarized by a simple model, but a plausible curve does not mean every parameter is well determined. This project uses the archived R Puromycin dataset to explore that distinction through Michaelis–Menten fitting.
 
@@ -35,7 +50,27 @@ It compares the full measured range with low-concentration subsets, inspects res
 
 [Background and sources](https://github.com/TheThunda01/enzyme-kinetics-workbench/blob/main/docs/project-context.md)
 
-## Protein structure evidence
+### Yeast flux workbench
+
+Metabolic reactions share substrates and products, so a change in one part of a network can constrain other pathways. This project asks which growth and exchange-flux conclusions remain feasible when oxygen uptake and the required growth fraction change. It extends a small enzyme-rate model to a coupled network.
+
+The implementation uses a pinned Yeast-GEM v9.1.1 snapshot, sparse linear optimization, and selected-reaction flux variability analysis. Six declared scenarios include a deliberately infeasible diagnostic. Saved fluxes are checked for balance and bounds, and extrema are compared using a different solver algorithm. Key themes are **stoichiometry, conservation, optimization, alternative solutions, and numerical assumptions**. Feasible ranges are not confidence intervals or measured fluxes; the published model's performance does not automatically validate this analysis.
+
+[Background and sources](https://github.com/TheThunda01/yeast-flux-workbench/blob/main/docs/project-context.md)
+
+
+### MAPK dynamics lab
+
+Signaling pathways change over time, and similar-looking trajectories can leave several parameter explanations open. This project asks which simulated observations help distinguish those explanations in a compact, published MAPK cascade.
+
+It translates a pinned BioModels encoding, checks conservation and numerical agreement, and updates a finite grid of two-parameter hypotheses. A variance-guided selection rule is compared with random and fixed schedules under the same virtual measurement budget. An off-grid case exposes one limitation of the assumed hypothesis set. Key themes are **dynamics, feedback, Bayesian inference, identifiability, and sequential decisions**. All observations are simulated. The acquisition rule is a heuristic, and successful recovery within this model does not validate a real signaling mechanism or laboratory experiment.
+
+[Background and sources](https://github.com/TheThunda01/mapk-dynamics-lab/blob/main/docs/project-context.md)
+
+
+## Molecular and cellular learning
+
+### Protein structure evidence
 
 A protein structure is evidence about a molecular arrangement, but it does not directly measure activity or explain every aspect of function. This project compares an experimental carbonic anhydrase II structure with an AlphaFold database prediction to examine what agreement and disagreement can support.
 
@@ -43,7 +78,7 @@ It maps residues between records, superposes comparable coordinates, and summari
 
 [Background and sources](https://github.com/TheThunda01/protein-structure-evidence/blob/main/docs/project-context.md)
 
-## GFP active learning
+### GFP active learning
 
 In a learning loop, the next measurements affect what a model can learn. This project explores that idea retrospectively using previously measured variants of green fluorescent protein. A simulated selection policy reveals existing labels rather than generating a new experimental result.
 
@@ -51,7 +86,7 @@ It compares selection strategies under a limited labeling budget and evaluates s
 
 [Background and sources](https://github.com/TheThunda01/gfp-active-learning/blob/main/docs/project-context.md)
 
-## Molecular solubility benchmark
+### Molecular solubility benchmark
 
 Chemical-property prediction depends on which molecules are available for training and how different the evaluation molecules are. This project uses public aqueous-solubility measurements to compare a training-mean baseline, ridge regression, and a random forest under two structure-based split rules.
 
@@ -59,7 +94,18 @@ It computes descriptors from SMILES, keeps canonical duplicate structures togeth
 
 [Background and sources](https://github.com/TheThunda01/molecular-solubility-benchmark/blob/main/docs/project-context.md)
 
-## Pasilla expression QC
+### Morphology transfer benchmark
+
+Cellular morphology provides an indirect view of a cell's response to a perturbation. This project asks whether public image-derived profiles can recover annotated relationships between compounds withheld from model development. It complements chemical-property prediction by studying a cellular phenotype.
+
+A compact LINCS Cell Painting subset preserves raw well-level measurements and DMSO controls. The workflow audits annotations and support, groups related chemical identities, fits preprocessing on training compounds, and evaluates retrieval and simple classifiers. Seven supported mechanism classes remain from eight prespecified candidates; exclusions stay visible. Key themes are **phenotypic profiling, grouped evaluation, batch effects, representation, and annotation uncertainty**. Retrieval excludes shared identities and plate maps. The classifier still faces plate and position confounding, and a similar phenotype does not establish a direct target, mechanism, or therapeutic benefit.
+
+[Background and sources](https://github.com/TheThunda01/morphology-transfer-benchmark/blob/main/docs/project-context.md)
+
+
+## Measurements and statistical validation
+
+### Pasilla expression QC
 
 Gene-count tables are not ready-made biological answers. Library size, count composition, sample annotation, and transformation choices can affect exploratory views. This project uses public Drosophila counts to investigate those choices before asking a gene-level question.
 
@@ -67,7 +113,7 @@ It checks sample identifiers, summarizes counts, compares total-count and median
 
 [Background and sources](https://github.com/TheThunda01/pasilla-expression-qc/blob/main/docs/project-context.md)
 
-## Sequence Quality Toolkit
+### Sequence Quality Toolkit
 
 Sequence formats look simple, but malformed records, mismatched metadata, ambiguous symbols, and misunderstood quality scores can quietly undermine downstream work. This project makes a useful subset of those checks visible in a small command-line tool.
 
@@ -75,7 +121,7 @@ It streams FASTQ files, validates record structure, calculates per-read and per-
 
 [Background and sources](https://github.com/TheThunda01/sequence-quality-toolkit/blob/main/docs/project-context.md)
 
-## Surveillance data quality
+### Surveillance data quality
 
 A clean-looking surveillance curve can hide missing submissions, changing denominators, or revisions that arrived later. This project investigates what a summary is actually based on before interpreting its shape.
 
@@ -83,7 +129,7 @@ It audits a pinned CDC aggregate extract, checks counts and displayed percentage
 
 [Background and sources](https://github.com/TheThunda01/surveillance-data-quality/blob/main/docs/project-context.md)
 
-## Cell-feature model validation
+### Cell-feature model validation
 
 A classifier can achieve a strong benchmark score without establishing that it will help in a new setting. This project uses a public cell-image-feature dataset to examine evaluation choices rather than claim a clinical application.
 
@@ -91,7 +137,9 @@ It compares logistic regression, a small random forest, and a prior baseline usi
 
 [Background and sources](https://github.com/TheThunda01/cell-feature-model-validation/blob/main/docs/project-context.md)
 
-## EvidenceTrail
+## Evidence and research workflows
+
+### EvidenceTrail
 
 Evidence-extraction tables need traceable records, consistent identifiers, and a clear way to inspect disagreements. Software can help with those mechanics while leaving scientific interpretation to a reviewer.
 
@@ -99,7 +147,7 @@ EvidenceTrail checks tables, compares reviewer records, shows how many submitted
 
 [Background and sources](https://github.com/TheThunda01/evidencetrail/blob/main/docs/project-context.md)
 
-## Review Compass
+### Review Compass
 
 A review plan is easier to discuss when its question, eligibility criteria, search ideas, and unresolved decisions are in one place. This project provides that planning structure and makes its automated cues deliberately modest.
 
@@ -113,6 +161,6 @@ Put [github.com/TheThunda01](https://github.com/TheThunda01) in the contact head
 
 Example wording, after reviewing and reproducing the work:
 
-> **Computational biology and research software portfolio** — Developed and documented Python, SQL, and JavaScript projects exploring enzyme kinetics, protein structures, retrospective active learning, molecular solubility, biological data quality, model evaluation, and evidence-review workflows. Included reproducible examples, automated checks, source attribution, and explicit methodological limitations.
+> **Computational biology and research software portfolio** — Developed and documented Python, SQL, and JavaScript projects exploring molecular and systems biology, virtual experimental design, phenotype learning, biological data quality, and evidence-review workflows. Included reproducible examples, automated checks, source attribution, and explicit methodological limitations.
 
 On a detailed CV, list these under Projects or Research Software. Keep them separate from peer-reviewed publications. AI assistance and the distinction between implemented features and future plans are disclosed in the repositories.
