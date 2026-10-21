@@ -111,16 +111,17 @@
       "pmid": "42557573",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42557573/",
       "checked_on": "2026-10-21",
-      "access_level": "abstract",
+      "access_level": "full_text",
       "metadata_status": "corrected",
       "supported_claims": [
         "TOP 2025 distinguishes research practices, verification practices, and verification studies."
       ],
       "limitations": [
-        "Metadata and abstract were inspected for this portfolio-level review; detailed methods and supplementary claims are not inferred from the abstract."
+        "Relevant full-text sections and Table 1 were rechecked through PMC XML on 21 October 2026; this supports the distinction between research practices, verification practices, and verification studies, not certification of this portfolio."
       ],
       "corrections": [
-        "Used author–year citation and distinguished the TOP 2025 guideline name from its 2026 article publication."
+        "Used author–year citation and distinguished the TOP 2025 guideline name from its 2026 article publication.",
+        "Rechecked category definitions against the accessible full text during the 21 October review."
       ]
     },
     {

@@ -35,10 +35,10 @@ The project-specific practical-use guides explain commands, failure behavior and
 
 ## Documentation checks
 
-The [shared checker](scripts/check_portfolio_docs.py) now also validates any numbered search-update records and rejects duplicate JSON keys. To require the second update in every local checkout:
+The [shared checker](scripts/check_portfolio_docs.py) also validates numbered search-update records and rejects duplicate JSON keys. This historical pass covered the original ten projects. To check their second update, use the matching manifest:
 
 ```bash
-python scripts/check_portfolio_docs.py --root /path/to/cloned-repositories --require-update 02
+python scripts/check_portfolio_docs.py --root /path/to/cloned-repositories --manifest portfolio-round2.json --require-update 02
 ```
 
-It checks document structure and machine-readable records. It does not establish that a search is complete or that a source supports every claim. Those remain review tasks.
+The current thirteen-project collection uses `portfolio.json` by default. Run the checker without `--require-update 02` to include the three later additions, whose initial searches have their own records. Neither command establishes that a search is complete or that a source supports every claim; those require reading and judgment.

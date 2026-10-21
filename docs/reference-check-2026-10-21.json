@@ -1,0 +1,43 @@
+{
+  "review_date": "2026-10-21",
+  "scope": "Profile-level rationale and publication metadata. Project-specific biological claims are reviewed in their respective repositories.",
+  "metadata_source": "NCBI PubMed efetch XML retrieved 2026-10-21",
+  "metadata_ids": [
+    "28640806",
+    "36241754",
+    "41820417",
+    "42557573",
+    "41186375",
+    "38651814",
+    "33499930",
+    "16478465",
+    "39134886",
+    "10712587"
+  ],
+  "body_checks": [
+    {
+      "pmcid": "PMC5480810",
+      "sections": "Project organization, change tracking, collaboration, and scope of advice",
+      "support": "Organization and versioning rationale; no claim that unit tests establish scientific correctness."
+    },
+    {
+      "pmcid": "PMC9562067",
+      "sections": "FAIR4RS principles and scope",
+      "support": "Research-software findability and reuse context, not a quality certification."
+    },
+    {
+      "pmcid": "PMC13043711",
+      "sections": "Open, Document, Execute, Collaborate recommendations",
+      "support": "Tiered software practice context; no automatic portfolio certification."
+    },
+    {
+      "pmcid": "PMC13439764",
+      "sections": "Conceptual framework, Table 1, research/verification practices and verification studies",
+      "support": "Computational reproduction and new-sample replication are distinct."
+    }
+  ],
+  "limitations": [
+    "Relevant sections were checked; not all supplements or every cited work were appraised.",
+    "A computational recheck of an AI-assisted project is not an independent human verification study."
+  ]
+}
