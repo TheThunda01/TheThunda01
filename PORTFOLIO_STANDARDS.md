@@ -47,3 +47,9 @@ The script checks the common README structure, the required practical-use and re
 Numbered updates preserve earlier search records. The checker validates `docs/search-update-*.json` when present; `--require-update 02` requires that specific update in every checkout. Duplicate JSON keys fail rather than silently replacing an earlier value.
 
 For the scientific and editorial review, add `--editorial-review 2026-10-20`. This checks the presence and schema of the review files and local links in authored documentation. It cannot establish that every term is understandable, every assumption has been found, or a citation supports its claim; those require reading and judgment.
+
+## Formula rendering
+
+Use GitHub's protected inline math delimiters and fenced `math` blocks so Markdown does not remove LaTeX escapes or equation line breaks. Check the actual rendered page for errors; balanced delimiters alone are not enough. Keep commands and field identifiers as code. Preserve audit-critical historical protocol text, with an equivalent rendered explanation in its current guide when needed. Report generators should emit the same math formatting as committed reports, and artifact records must reflect any presentation-only byte changes.
+
+The [formula rendering check](docs/math-rendering-checks.json) records the pages and expression counts verified in the browser.
