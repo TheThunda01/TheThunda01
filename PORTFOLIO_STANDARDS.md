@@ -28,6 +28,18 @@ Use descriptive author–year citations. Give papers a verified title, author or
 
 This approach draws on [Wilson et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28640806/) for reproducible research organization and [Barker et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/36241754/) for software metadata and reuse. The CODE roadmap of [Di Cosmo et al. (2026)](https://doi.org/10.1038/s41597-026-06705-6) organizes recommendations around Open, Document, Execute, and Collaborate. These are practice frameworks, not evidence that these projects have met an external certification standard. See the [complete references](REFERENCES.md).
 
+## Writing for readers
+
+The writing approach draws on *Writing in the Sciences*, Units 1–7, supplied for this editorial review. Apply their principles to the reader's task:
+
+- Lead each paragraph with its main point, then give the evidence or explanation. Separate a result from its interpretation and limits.
+- Name the actor when it helps: the script checks inputs, the model predicts a value, or the reviewer records a decision. Use precise verbs and keep the subject close to its verb.
+- Cut repetition, empty qualifiers, and unnecessary jargon. Define technical terms where readers first need them, and use parallel wording for comparable methods or options.
+- Explain metrics, units, denominators, and uncertainty beside the results. Summarize the pattern without repeating every table entry.
+- Preserve the strength of the evidence. Editing must not turn association into causation, an exploratory result into validation, or a future goal into an accomplishment. Retain source attribution and AI-assistance disclosure.
+
+These principles guide revision, not a word-count target or a ban on passive voice. Keep procedural detail needed to reproduce the work. The [writing review](docs/writing-review-2026-10-26.md) records how they were applied to the current documentation.
+
 ## Moving toward professional use
 
 The current projects are research demonstrations with explicit checks and limitations. Moving a project into a team workflow requires a defined use case, representative input data, an independent run, agreement about failure handling, and a named person responsible for interpreting the result. Operational use also needs suitable privacy, access, retention, maintenance, and support arrangements for that setting. Those arrangements are not supplied by a GitHub repository.
