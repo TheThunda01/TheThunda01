@@ -1,6 +1,6 @@
 # Brandon J. Huynh
 
-**GitHub portfolio: [github.com/TheThunda01](https://github.com/TheThunda01)**
+**Molecular laboratory scientist exploring computational biology and mathematical modeling.**
 
 My interests sit at the intersection of computational biology, artificial intelligence (AI), mathematical modeling, and experimental molecular biology. My background spans chemistry, molecular laboratory science, epidemiology, and biostatistics. I'm building the computational foundations to connect biological measurements with models that can be questioned, tested, and improved.
 
@@ -20,7 +20,7 @@ The next checkpoints are my own explanation of the result, an independently deve
 | How models guide measurement choices | [MAPK dynamics](https://github.com/TheThunda01/mapk-dynamics-lab) | A small mechanistic model, competing observation schedules, and a simulation stress test. |
 | How assumptions affect biological data analysis | [Pasilla expression QC](https://github.com/TheThunda01/pasilla-expression-qc) | Normalization and sample-influence checks, with an unresolved source-label discrepancy kept visible. |
 
-The [current review](docs/review-2026-10-21.md) records the scientific checks and maintenance changes across the collection. The project lists below give a broader route through the work.
+The [latest maintenance review](docs/review-2026-10-26.md) records the accuracy, usability, and consistency checks across the collection. The project lists below give a broader route through the work.
 
 ## Mechanistic and systems modeling
 
@@ -59,6 +59,6 @@ The [project guide](PROJECT_GUIDE.md) explains background and concepts; the [roa
 
 The [research review](RESEARCH_REVIEW.md), [verification update](VERIFICATION_REVIEW.md), [shared standard](PORTFOLIO_STANDARDS.md), and [maintenance guide](MAINTENANCE.md) record how I approach evidence and reproducibility.
 
-The [current review](docs/review-2026-10-21.md) builds on the [earlier scientific and editorial review](docs/review-2026-10-20.md). Use the [glossary](docs/glossary.md) for unfamiliar terms, the [assumptions](docs/assumptions.md) for the limits behind the portfolio's claims, and the [references](REFERENCES.md) and [reference audit](docs/reference-audit.json) for source details and access limits.
+The [21 October scientific review](docs/review-2026-10-21.md) and [20 October review](docs/review-2026-10-20.md) preserve the earlier checks. Use the [glossary](docs/glossary.md) for unfamiliar terms, the [assumptions](docs/assumptions.md) for the limits behind the portfolio's claims, and the [references](REFERENCES.md) and [reference audit](docs/reference-audit.json) for source details and access limits.
 
 These projects were developed with AI assistance. Public data retain attribution and reuse terms; synthetic examples are labeled. Tests check specified behavior, not biological correctness, clinical validity, or autonomous scientific judgment. I welcome feedback on questions and methods I can explain and reproduce.

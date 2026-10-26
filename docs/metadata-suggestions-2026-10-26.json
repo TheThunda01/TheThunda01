@@ -1,0 +1,107 @@
+{
+  "status": "suggested_not_applied",
+  "review_date": "2026-10-26",
+  "reason": "GitHub rejected the topics update with HTTP 403: Resource not accessible by integration. Repository metadata requires permissions not available to this connection.",
+  "profile_repository_description": "Computational biology portfolio: 13 reproducible projects in modeling, data quality, and evidence workflows.",
+  "topics": {
+    "cell-feature-model-validation": [
+      "computational-biology",
+      "machine-learning",
+      "cross-validation",
+      "model-calibration",
+      "reproducible-research"
+    ],
+    "enzyme-kinetics-workbench": [
+      "computational-biology",
+      "enzyme-kinetics",
+      "parameter-estimation",
+      "mathematical-modeling",
+      "reproducible-research"
+    ],
+    "evidencetrail": [
+      "evidence-synthesis",
+      "data-quality",
+      "research-tools",
+      "streamlit",
+      "reproducible-research"
+    ],
+    "gfp-active-learning": [
+      "computational-biology",
+      "active-learning",
+      "protein-engineering",
+      "machine-learning",
+      "reproducible-research"
+    ],
+    "mapk-dynamics-lab": [
+      "active-learning",
+      "bayesian-inference",
+      "computational-biology",
+      "dynamical-systems",
+      "systems-biology",
+      "reproducible-research"
+    ],
+    "molecular-solubility-benchmark": [
+      "cheminformatics",
+      "molecular-descriptors",
+      "machine-learning",
+      "solubility",
+      "reproducible-research"
+    ],
+    "morphology-transfer-benchmark": [
+      "cell-painting",
+      "computational-biology",
+      "machine-learning",
+      "phenotypic-profiling",
+      "reproducible-research"
+    ],
+    "pasilla-expression-qc": [
+      "bioinformatics",
+      "rna-seq",
+      "quality-control",
+      "data-visualization",
+      "reproducible-research"
+    ],
+    "protein-structure-evidence": [
+      "structural-biology",
+      "protein-structure",
+      "alphafold",
+      "bioinformatics",
+      "reproducible-research"
+    ],
+    "review-compass": [
+      "evidence-synthesis",
+      "research-tools",
+      "literature-review",
+      "javascript",
+      "reproducible-research"
+    ],
+    "sequence-quality-toolkit": [
+      "bioinformatics",
+      "fastq",
+      "fasta",
+      "quality-control",
+      "reproducible-research"
+    ],
+    "surveillance-data-quality": [
+      "public-health",
+      "epidemiology",
+      "data-quality",
+      "sqlite",
+      "reproducible-research"
+    ],
+    "TheThunda01": [
+      "github-profile",
+      "portfolio",
+      "computational-biology",
+      "mathematical-modeling"
+    ],
+    "yeast-flux-workbench": [
+      "computational-biology",
+      "flux-balance-analysis",
+      "metabolic-modeling",
+      "saccharomyces-cerevisiae",
+      "systems-biology",
+      "reproducible-research"
+    ]
+  }
+}
