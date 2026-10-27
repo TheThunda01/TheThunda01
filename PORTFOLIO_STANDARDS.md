@@ -16,6 +16,12 @@ Every project README follows the same sequence:
 
 The practical-use guide describes an input/output contract, a worked use case, checks before relying on a result, known limits, and prioritized improvements with acceptance criteria. Each literature review records its question, search strategy, evidence, implementation consequences, remaining work, and review limitations. `docs/search-log.json` preserves the search metadata and screening decisions in a machine-readable form. Each project also links a glossary, assumption register, reference audit, and dated correction record from its README.
 
+## Connecting each project to the portfolio
+
+Use a short paragraph in “Why this project” to explain the project's role in [From biological measurements to better experiments](PROJECT_GUIDE.md). The project-context guide can give a related next stop. Keep the seven README sections above, and preserve the result, provenance, and material limitations beside the relevant claims.
+
+The featured reading path is Enzyme kinetics, GFP, then MAPK. Supporting projects contribute measurement checks, model evaluation, evidence workflows, or an accessible visual introduction. A conceptual connection must not imply that separate datasets or tools already form an integrated workflow. Keep current investigations distinct from proposed extensions, and link dated maintenance records without making them the main reading path.
+
 ## Evidence and language
 
 Scientific statements should point to an appropriate source. A method paper can explain an algorithm; it cannot validate this implementation. An official data dictionary can define a field; it cannot establish that a particular extract is complete. A software test can check an invariant; it cannot establish biological meaning. The distinction should be visible where a reader needs it, without repeating the same disclaimer after every sentence.
