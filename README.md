@@ -1,6 +1,6 @@
 # Brandon J. Huynh, MPH
 
-**Molecular laboratory scientist exploring computational biology and mathematical modeling.**
+**Infectious Disease and Public Health Researcher exploring computational biology and mathematical modeling.**
 
 I'm building computational skills to connect biological measurements with models that can be questioned, tested, and improved. My background spans chemistry, molecular laboratory science, epidemiology, and biostatistics. My interests include artificial intelligence (AI) and experimental molecular biology.
 
