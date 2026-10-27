@@ -48,7 +48,7 @@ A proposed extension should state what changes, why it matters, and how success 
 
 ## Checking consistency
 
-After cloning the thirteen repositories into one directory, run:
+After cloning the project repositories listed in `portfolio.json` into one directory, run:
 
 ```bash
 python scripts/check_portfolio_docs.py --root /path/to/cloned-repositories

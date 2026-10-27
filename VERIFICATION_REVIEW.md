@@ -41,4 +41,4 @@ The [shared checker](scripts/check_portfolio_docs.py) also validates numbered se
 python scripts/check_portfolio_docs.py --root /path/to/cloned-repositories --manifest portfolio-round2.json --require-update 02
 ```
 
-The current thirteen-project collection uses `portfolio.json` by default. Run the checker without `--require-update 02` to include the three later additions, whose initial searches have their own records. Neither command establishes that a search is complete or that a source supports every claim; those require reading and judgment.
+The current collection uses `portfolio.json` by default; the dated checks above retain their original scope. Run the checker without `--require-update 02` to include the three later additions, whose initial searches have their own records. Neither command establishes that a search is complete or that a source supports every claim; those require reading and judgment.
