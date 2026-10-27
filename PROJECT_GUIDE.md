@@ -1,12 +1,12 @@
 # A quick guide to the projects
 
-These thirteen projects explore biological modeling, machine learning, measurement quality, and evidence workflows. Each repository contains a runnable demonstration with documented inputs, methods, and limits.
+These fourteen projects explore biological modeling, machine learning, measurement quality, and evidence workflows. Each repository contains a runnable demonstration with documented inputs, methods, and limits.
 
 The projects reflect my interests in computational biology, artificial intelligence (AI), mathematical modeling, and experimental molecular biology. They use different systems and datasets to develop complementary skills. They do not form a validated pipeline or report new laboratory experiments I conducted or mechanisms I established.
 
 **For a résumé or CV: [github.com/TheThunda01](https://github.com/TheThunda01).**
 
-The [latest expansion](PROJECT_EXPANSION.md) explains what the new projects add and where they still need development. The [research review](RESEARCH_REVIEW.md) and [verification update](VERIFICATION_REVIEW.md) preserve the earlier ten-project review history. The [shared standard](PORTFOLIO_STANDARDS.md) describes the documentation expected before a new project is presented as complete.
+The [systems and cellular expansion](PROJECT_EXPANSION.md) explains what those projects add and where they still need development. The [research review](RESEARCH_REVIEW.md) and [verification update](VERIFICATION_REVIEW.md) preserve the earlier ten-project review history. The [shared standard](PORTFOLIO_STANDARDS.md) describes the documentation expected before a new project is presented as complete.
 
 The [glossary](docs/glossary.md) defines the terms below, including green fluorescent protein (GFP), mitogen-activated protein kinase (MAPK), and the statistical methods. The [assumption register](docs/assumptions.md) explains the scope of the collection.
 
@@ -32,6 +32,7 @@ The guides explain the biological measurements, model assumptions, and implement
 | --- | --- | --- |
 | Enzyme kinetics workbench | [Reaction rates, apparent parameters, and identifiability](https://github.com/TheThunda01/enzyme-kinetics-workbench/blob/main/docs/biology-and-concepts.md) | Nonlinear fitting, parameter profiles, and concentration-range sensitivity |
 | Protein structure evidence | [Structures, confidence, residue mapping, and geometric evidence](https://github.com/TheThunda01/protein-structure-evidence/blob/main/docs/biology-and-concepts.md) | Experimental/predicted structure comparison with explicit mapping and evidence limits |
+| Nature's Perfume Lab | [Terpene chemistry, atom correspondence and enzyme evidence](https://github.com/TheThunda01/natures-perfume-lab/blob/main/docs/biology-and-concepts.md) | Attributed chemical graphs, curated carbon labels, sequence alignment and structural coverage |
 | GFP active learning | [Fluorescence, sequence variation, and retrospective active learning](https://github.com/TheThunda01/gfp-active-learning/blob/main/docs/biology-and-concepts.md) | Budget-matched selection-policy simulations and sequence-aware evaluation |
 | Molecular solubility benchmark | [Aqueous solubility, descriptors, and chemical generalization](https://github.com/TheThunda01/molecular-solubility-benchmark/blob/main/docs/biology-and-concepts.md) | Identity/scaffold split comparison and held-out error diagnostics |
 | Pasilla expression QC | [RNA processing, gene counts, normalization, and study design](https://github.com/TheThunda01/pasilla-expression-qc/blob/main/docs/biology-and-concepts.md) | Condition/read-type cross-tabulation and additive-design rank diagnostics |
@@ -89,6 +90,14 @@ It maps residues between records, superposes comparable coordinates, and summari
 This familiar historical structure is not an independent test of prediction generalization; structural similarity alone does not validate a mechanism or a drug-binding claim.
 
 [Background and sources](https://github.com/TheThunda01/protein-structure-evidence/blob/main/docs/project-context.md)
+
+### Nature's Perfume Lab
+
+How can a shared starting molecule lead to different plant aroma compounds? This fixed case follows geranyl diphosphate toward the selected limonene and linalool products, links curated carbon labels to attributed chemical graphs, and compares two documented enzyme sequences.
+
+The explorer and Python workflow keep chemical identity, alignment denominators and the citrus structure's coverage inspectable. Carbon labels record a curated correspondence rather than measured atom fate. The project does not compare matched enzyme pockets or predict scent perception, and it includes no new laboratory or sensory measurements.
+
+[Background and sources](https://github.com/TheThunda01/natures-perfume-lab/blob/main/docs/project-context.md)
 
 ### GFP active learning
 

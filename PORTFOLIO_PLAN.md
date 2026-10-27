@@ -2,9 +2,9 @@
 
 My next priority is to understand the GFP policy comparison, develop an independent follow-up, and analyze failures. After those learning checkpoints, I plan to extend the existing MAPK simulation. The broader research goals below are later options.
 
-The thirteen implemented demonstrations cover mechanistic and systems modeling, molecular and cellular learning, measurement quality, and evidence workflows. They build foundations for my interests in artificial intelligence (AI), molecular biology, drug discovery, and host–pathogen research; they do not establish expertise across those fields.
+The fourteen implemented demonstrations cover mechanistic and systems modeling, molecular and cellular learning, measurement quality, and evidence workflows. They build foundations for my interests in artificial intelligence (AI), molecular biology, drug discovery, and host–pathogen research; they do not establish expertise across those fields.
 
-**Portfolio link for a résumé or CV: [github.com/TheThunda01](https://github.com/TheThunda01).** Use the [project guide](PROJECT_GUIDE.md) for the questions and concepts, the [systems and cellular expansion](PROJECT_EXPANSION.md) for the three newest projects, and the [glossary](docs/glossary.md) and [assumption register](docs/assumptions.md) for definitions and limits.
+**Portfolio link for a résumé or CV: [github.com/TheThunda01](https://github.com/TheThunda01).** Use the [project guide](PROJECT_GUIDE.md) for the questions and concepts, the [systems and cellular expansion](PROJECT_EXPANSION.md) for the systems and cellular projects, and the [glossary](docs/glossary.md) and [assumption register](docs/assumptions.md) for definitions and limits.
 
 The [first practical-use review](RESEARCH_REVIEW.md) and [second verification pass](VERIFICATION_REVIEW.md) preserve the original ten-project review history. Each project's practical-use guide lists remaining work. The [maintenance guide](MAINTENANCE.md) proposes a manual review schedule; it does not provide automatic monitoring.
 
