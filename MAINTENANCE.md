@@ -36,3 +36,27 @@ The [project-specific practical-use guides](RESEARCH_REVIEW.md) contain the next
 ## Platform checks
 
 Use a fresh Windows checkout as well as Linux CI when changing byte-level input checks or report writers. Files protected by a checksum need an explicit Git line-ending policy. Write generated text as UTF-8. Tests that specifically require symbolic links should report a clear capability skip when Windows cannot create them, while ordinary file-protection assertions still run. Keep a CI job that exercises the link-specific tests.
+
+
+## Portfolio navigation
+
+Keep the profile focused on the question, three featured studies, and the current investigation. The complete inventory belongs in [PROJECT_GUIDE.md](PROJECT_GUIDE.md); implemented scope and future work belong in [PORTFOLIO_PLAN.md](PORTFOLIO_PLAN.md). Keep those pages and the profile pins aligned when a project's role changes.
+
+The featured reading path is Enzyme kinetics → GFP → MAPK. GFP is the current investigation; the reading order does not imply a data pipeline or a chronology of completed research. The six profile pins feature GFP, MAPK, Enzyme, Surveillance, EvidenceTrail, and Nature's Perfume Lab.
+
+## Review records
+
+These records describe their stated revisions and dates. They are historical evidence, not live status dashboards.
+
+| Record | Scope |
+| --- | --- |
+| [Portfolio story, 27 October](docs/review-2026-10-27-story.md) | Profile hierarchy, complete project guide, roadmap, and project navigation |
+| [Toolkit update, 27 October](docs/toolkit-strengthening-2026-10-27.md) | Model comparisons, interactive explorers, and editable workflows |
+| [Maintenance review, 26 October](docs/review-2026-10-26.md) | Accuracy and reproducibility checks |
+| [Writing review, 26 October](docs/writing-review-2026-10-26.md) | Editorial revisions based on Writing in the Sciences |
+| [Scientific and editorial review, 21 October](docs/review-2026-10-21.md) | Dated scientific and documentation checks |
+| [Earlier review, 20 October](docs/review-2026-10-20.md) | Earlier collection-wide review |
+| [Research review](RESEARCH_REVIEW.md) and [verification update](VERIFICATION_REVIEW.md) | Original ten-project review history |
+| [Systems and cellular expansion](PROJECT_EXPANSION.md) | Dated thirteen-project collection and three-project expansion |
+
+The [references](REFERENCES.md), [source audit](docs/reference-audit.json), and [formula-rendering record](docs/math-rendering-checks.json) retain their detailed evidence and access limits.
