@@ -18,7 +18,7 @@ My next goals are to explain that result in my own words, develop an independent
 | How models guide measurement choices | [MAPK dynamics](https://github.com/TheThunda01/mapk-dynamics-lab) | A small mechanistic model, competing observation schedules, and a simulation stress test. |
 | How assumptions affect biological data analysis | [Pasilla expression QC](https://github.com/TheThunda01/pasilla-expression-qc) | Normalization and sample-influence checks, with an unresolved source-label discrepancy kept visible. |
 
-The [maintenance review](docs/review-2026-10-26.md) records accuracy and reproducibility checks; the [writing review](docs/writing-review-2026-10-26.md) explains the revisions based on *Writing in the Sciences*. The [toolkit update](docs/toolkit-strengthening-2026-10-27.md) links the new model comparisons, interactive explorers and editable workflows. The [toolkit update](docs/toolkit-strengthening-2026-10-27.md) links the new model comparisons, interactive explorers and editable workflows. The project lists below give a broader route through the work.
+The [maintenance review](docs/review-2026-10-26.md) records accuracy and reproducibility checks; the [writing review](docs/writing-review-2026-10-26.md) explains the revisions based on *Writing in the Sciences*. The [toolkit update](docs/toolkit-strengthening-2026-10-27.md) links the new model comparisons, interactive explorers and editable workflows. The project lists below give a broader route through the work.
 
 ## Mechanistic and systems modeling
 
