@@ -1,4 +1,4 @@
-# Brandon J. Huynh
+# Brandon J. Huynh, MPH
 
 **Molecular laboratory scientist exploring computational biology and mathematical modeling.**
 
