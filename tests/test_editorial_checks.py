@@ -3,7 +3,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from scripts.editorial_checks import audit_errors, heading_ids, inspect_editorial_review, local_link_errors
+from scripts.editorial_checks import audit_errors, heading_ids, inspect_editorial_review, latest_review_date, local_link_errors
 
 
 class EditorialChecks(unittest.TestCase):
@@ -29,6 +29,19 @@ class EditorialChecks(unittest.TestCase):
 
     def test_complete_editorial_record_passes(self):
         self.assertEqual(inspect_editorial_review(self.root, "2026-10-20"), [])
+
+    def test_latest_review_uses_newest_dated_record(self):
+        for name in ("review-2026-10-27.md", "review-2026-09-01.md", "review-notes.md"):
+            (self.root / "docs" / name).touch()
+        self.assertEqual(latest_review_date(self.root), "2026-10-27")
+
+    def test_latest_review_reports_missing_or_invalid_dates(self):
+        (self.root / "docs/review-2026-10-20.md").unlink()
+        with self.assertRaisesRegex(ValueError, "No dated review"):
+            latest_review_date(self.root)
+        (self.root / "docs/review-2026-02-30.md").touch()
+        with self.assertRaisesRegex(ValueError, "Invalid date"):
+            latest_review_date(self.root)
 
     def test_missing_guide_and_readme_link_are_detected(self):
         (self.root / "docs/glossary.md").unlink()

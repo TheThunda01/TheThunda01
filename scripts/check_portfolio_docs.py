@@ -120,7 +120,7 @@ def main() -> int:
     parser.add_argument("--require-update", type=str,
                         help="Require a numbered search update in every repository (for example 02)")
     parser.add_argument("--editorial-review", type=str,
-                        help="Also check glossary, assumptions, source-audit fields and authored-document links for YYYY-MM-DD")
+                        help="Also check glossary, assumptions, source-audit fields and authored-document links for YYYY-MM-DD or the latest review in each project")
     args = parser.parse_args()
     try:
         manifest = json.loads(args.manifest.read_text(encoding="utf-8"), object_pairs_hook=unique_object)
@@ -138,11 +138,20 @@ def main() -> int:
                    for slug in repositories]
         if args.editorial_review:
             try:
-                from .editorial_checks import inspect_editorial_review
+                from .editorial_checks import inspect_editorial_review, latest_review_date
             except ImportError:
-                from editorial_checks import inspect_editorial_review
+                from editorial_checks import inspect_editorial_review, latest_review_date
             for result in results:
-                result["errors"].extend(inspect_editorial_review(args.root / result["repository"], args.editorial_review))
+                root = args.root / result["repository"]
+                review_date = args.editorial_review
+                if review_date == "latest":
+                    try:
+                        review_date = latest_review_date(root)
+                    except ValueError as error:
+                        result["errors"].append(str(error))
+                        continue
+                result["editorial_review"] = review_date
+                result["errors"].extend(inspect_editorial_review(root, review_date))
     except (OSError, ValueError, TypeError, KeyError) as exc:
         parser.error(str(exc))
     report = {"schema_version": 1, "checks": "documentation structure and local links only",

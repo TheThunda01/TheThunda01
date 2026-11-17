@@ -64,7 +64,7 @@ The script checks the common README structure, the required practical-use and re
 
 Numbered updates preserve earlier search records. The checker validates `docs/search-update-*.json` when present. `--require-update 02` requires that particular update in every repository named in the selected manifest; use `--manifest portfolio-round2.json` for the original ten-project second pass. The later projects have their own initial searches. Duplicate JSON keys fail rather than silently replacing an earlier value.
 
-For the current scientific and editorial review, add `--editorial-review 2026-10-21`. The earlier `2026-10-20` records remain available. This checks review-file presence, source-audit fields, and local links in authored documentation. It cannot establish that every term is understandable, every assumption has been found, or a citation supports its claim; those require reading and judgment.
+Use `--editorial-review latest` to check each project against its most recent dated review. Projects joined the collection at different times. The JSON report records which date was checked for each one. To revisit a particular review on a matching set of repositories, pass its date, for example `--editorial-review 2026-10-21`. These checks cover the presence of review records, source-audit fields, and local links. Assessing the evidence behind a citation still takes a reader.
 
 ## Formula rendering
 
