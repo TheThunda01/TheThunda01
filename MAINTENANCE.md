@@ -40,9 +40,19 @@ Use a fresh Windows checkout as well as Linux CI when changing byte-level input 
 
 ## Portfolio navigation
 
-Keep the profile focused on the question, three featured studies, and the current investigation. The complete inventory belongs in [PROJECT_GUIDE.md](PROJECT_GUIDE.md); implemented scope and future work belong in [PORTFOLIO_PLAN.md](PORTFOLIO_PLAN.md). Keep those pages and the profile pins aligned when a project's role changes.
+Use the profile to introduce the research question, offer a few ways into the work, and show one result with a link to its data. The complete inventory belongs in [PROJECT_GUIDE.md](PROJECT_GUIDE.md); implemented scope and future work belong in [PORTFOLIO_PLAN.md](PORTFOLIO_PLAN.md). Keep those pages and the profile pins aligned when a project's role changes.
 
 The featured reading path is Enzyme kinetics → GFP → MAPK. GFP is the current investigation; the reading order does not imply a data pipeline or a chronology of completed research. The six profile pins feature GFP, MAPK, Enzyme, Surveillance, EvidenceTrail, and Nature's Perfume Lab.
+
+### Refreshing the profile figure
+
+The chart shows the four recorded contrasts in the [GFP study at the figure’s source revision](https://github.com/TheThunda01/gfp-active-learning/blob/4b27c32047288e32a647e2e8b411f3b272d6113c/experiments/uncertainty_ablation/results/distance_benefit_contrast.csv). Each contrast measures the combined rule’s improvement over random selection on the distant examples minus its improvement on the local examples. The unit is root mean squared error (RMSE) on the study’s fluorescence scale.
+
+With Matplotlib installed and the study checked out alongside this repository at that revision, run the following command from the profile repository. If the study changes, update the source revision, figure, alt text, and interpretation together.
+
+```bash
+python scripts/plot_gfp_contrast.py ../gfp-active-learning/experiments/uncertainty_ablation/results/distance_benefit_contrast.csv docs/images/gfp-distance-contrast.png
+```
 
 ## Review records
 

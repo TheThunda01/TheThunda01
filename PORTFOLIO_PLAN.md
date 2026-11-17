@@ -2,7 +2,7 @@
 
 The direction is **from biological measurements to better experiments**: examine the inputs, test what a model can support, and investigate which observation would help next. The current priority is a focused follow-up to the GFP selection-policy comparison, followed by a deeper MAPK failure analysis.
 
-The [project guide](PROJECT_GUIDE.md) gives a reading path through all fourteen demonstrations. Enzyme kinetics is the introduction, GFP is the current investigation, and MAPK is the next research direction. The supporting projects supply measurement checks, evaluation methods, evidence workflows, and an accessible visual example. They use different systems and do not form an integrated discovery pipeline.
+The [project guide](PROJECT_GUIDE.md) covers the fourteen demonstrations in this roadmap and the companion public-health atlas and book. Enzyme kinetics is the introduction, GFP is the current investigation, and MAPK is the next research direction. The supporting projects supply measurement checks, evaluation methods, evidence workflows, and an accessible visual example. They use different systems and do not form an integrated discovery pipeline.
 
 ## Current priority: depth in the GFP investigation
 
