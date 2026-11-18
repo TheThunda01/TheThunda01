@@ -40,11 +40,19 @@ Use a fresh Windows checkout as well as Linux CI when changing byte-level input 
 
 ## Portfolio navigation
 
-Use the profile to introduce the research question, offer a few ways into the work, and show one result with a link to its data. The complete inventory belongs in [PROJECT_GUIDE.md](PROJECT_GUIDE.md); implemented scope and future work belong in [PORTFOLIO_PLAN.md](PORTFOLIO_PLAN.md). Keep those pages and the profile pins aligned when a project's role changes.
+Lead with the Atlas comparison, then offer routes to the surveillance audit, the reviewer demo, and the enzyme workbench. Link each featured result to its data. The complete inventory belongs in [PROJECT_GUIDE.md](PROJECT_GUIDE.md); implemented scope and future work belong in [PORTFOLIO_PLAN.md](PORTFOLIO_PLAN.md). Keep those pages and the profile pins aligned when a project's role changes.
 
-The featured reading path is Enzyme kinetics → GFP → MAPK. GFP is the current investigation; the reading order does not imply a data pipeline or a chronology of completed research. The six profile pins feature GFP, MAPK, Enzyme, Surveillance, EvidenceTrail, and Nature's Perfume Lab.
+The featured reading path is Enzyme kinetics → GFP → MAPK. GFP is the current investigation; the reading order does not imply a data pipeline or a chronology of completed research. The intended pin order is Colombia Dengue Atlas, Surveillance Data Quality, EvidenceTrail, GFP, Enzyme Kinetics, and MAPK. GitHub manages these pins separately from the README.
 
-### Refreshing the profile figure
+### Rebuild the dengue chart
+
+The figure uses weekly counts for event 210 in 2019 from the [Atlas v1.1.0 weekly table](https://github.com/TheThunda01/colombia-dengue-atlas/blob/v1.1.0/data/processed/surveillance_weekly.csv). It shows missing weeks explicitly. To regenerate it, use the Atlas checkout alongside the profile repository and run the following command with Matplotlib installed.
+
+```bash
+python scripts/plot_dengue_coverage.py ../colombia-dengue-atlas/data/processed/surveillance_weekly.csv docs/images/dengue-reporting-coverage.png
+```
+
+### Rebuild the GFP chart
 
 The chart shows the four recorded contrasts in the [GFP study at the figure’s source revision](https://github.com/TheThunda01/gfp-active-learning/blob/4b27c32047288e32a647e2e8b411f3b272d6113c/experiments/uncertainty_ablation/results/distance_benefit_contrast.csv). Each contrast measures the combined rule’s improvement over random selection on the distant examples minus its improvement on the local examples. The unit is root mean squared error (RMSE) on the study’s fluorescence scale.
 

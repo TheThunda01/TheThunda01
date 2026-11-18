@@ -8,9 +8,9 @@ The guide covers fourteen demonstrations that share a documentation standard. Tw
 
 | Your interest | Start with | Continue to |
 | --- | --- | --- |
+| Public-health measurements | [Colombia Dengue Surveillance Atlas](#colombia-dengue-surveillance-atlas) | [Surveillance data quality](#surveillance-data-quality) |
 | The main research question | [Enzyme kinetics](#enzyme-kinetics-workbench) | [GFP](#gfp-active-learning), then [MAPK](#mapk-dynamics-lab) |
 | The current investigation | [GFP component comparison](https://github.com/TheThunda01/gfp-active-learning/tree/main/experiments/uncertainty_ablation) | [The proposed failure analysis](PORTFOLIO_PLAN.md#current-priority-depth-in-the-gfp-investigation) |
-| Public-health measurements | [Colombia Dengue Surveillance Atlas](#colombia-dengue-surveillance-atlas) | [Surveillance data quality](#surveillance-data-quality) |
 | Public-health writing | [Beyond the Bug](#beyond-the-bug) | [The public-health atlas](#colombia-dengue-surveillance-atlas) |
 | A visual biological example | [Nature's Perfume Lab](#natures-perfume-lab) | [Protein structure evidence](#protein-structure-evidence) |
 | Practical review tools | [EvidenceTrail](#evidencetrail) | [Review Compass](#review-compass) |
@@ -21,7 +21,7 @@ Read a project's question and example result first. Its README then leads to rep
 
 ### Colombia Dengue Surveillance Atlas
 
-Select a department and a week to see which observations were available. A blank map cell can mean the source supplied no observation for that selection. The weekly series, source-row counts, and downloadable table help you tell a gap from a reported zero. The population-adjusted view uses total population as its denominator. [Open the Atlas](https://thethunda01.github.io/colombia-dengue-atlas/) · [Explore the data and build guide](https://github.com/TheThunda01/colombia-dengue-atlas)
+Follow the same 52 weeks in two places. For Antioquia, the 2019 source contains 4,980 dengue cases and a population denominator of 6,518,070 residents, or 76.4 recorded cases per 100,000 residents. For Bogotá, those weeks contain no dengue records. The Atlas leaves the case count and rate unavailable. Select either view, then download the summary to inspect the calculation. [Explore Antioquia](https://thethunda01.github.io/colombia-dengue-atlas/explore.html?department=05&event=210&start=2019&end=2019&first=1&last=52&metric=rate) · [Explore Bogotá](https://thethunda01.github.io/colombia-dengue-atlas/explore.html?department=11&event=210&start=2019&end=2019&first=1&last=52&metric=rate) · [Inspect the Atlas code and data](https://github.com/TheThunda01/colombia-dengue-atlas)
 
 ### Beyond the Bug
 
