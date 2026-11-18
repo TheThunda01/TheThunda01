@@ -126,6 +126,21 @@ def audit_errors(path: Path) -> list[str]:
     return errors
 
 
+def latest_review_date(root: Path) -> str:
+    """Find the most recent dated editorial review shipped with this project."""
+    dates = []
+    for path in (root / "docs").glob("review-*.md"):
+        match = re.fullmatch(r"review-(\d{4}-\d{2}-\d{2})\.md", path.name)
+        if match and path.is_file():
+            try:
+                dates.append(date.fromisoformat(match.group(1)))
+            except ValueError as error:
+                raise ValueError(f"Invalid date in review filename: {path.name}") from error
+    if not dates:
+        raise ValueError("No dated review found under docs/")
+    return max(dates).isoformat()
+
+
 def inspect_editorial_review(root: Path, review_date: str) -> list[str]:
     errors = []
     try:

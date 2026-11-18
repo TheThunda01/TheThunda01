@@ -1,20 +1,31 @@
-# A guide from biological measurements to better experiments
+# Find your way through the portfolio
 
-**What can we trust in a measurement, what can a model explain, and what should we measure next?** The fourteen projects below examine parts of that question. The featured path introduces uncertainty, tests a selection rule, and then considers which observation could help distinguish model hypotheses.
+You can start with a public-health question, a biological measurement, or a research task. The table below points to a first example and a next stop. If you want to run an example, open its README and follow the quick start.
 
-These are complementary studies using different systems and datasets. They do not form an integrated pipeline or report new laboratory experiments I conducted. The [roadmap](PORTFOLIO_PLAN.md) separates implemented work from proposed extensions; the [shared standard](PORTFOLIO_STANDARDS.md) explains the documentation and evidence requirements.
+The guide covers fourteen demonstrations that share a documentation standard. Two companion projects bring the public-health work into a map and a book. The featured studies use different datasets and can be read independently. [Roadmap](PORTFOLIO_PLAN.md) · [Shared standard](PORTFOLIO_STANDARDS.md)
 
 ## Choose a starting point
 
 | Your interest | Start with | Continue to |
 | --- | --- | --- |
+| Public-health measurements | [Colombia Dengue Surveillance Atlas](#colombia-dengue-surveillance-atlas) | [Surveillance data quality](#surveillance-data-quality) |
 | The main research question | [Enzyme kinetics](#enzyme-kinetics-workbench) | [GFP](#gfp-active-learning), then [MAPK](#mapk-dynamics-lab) |
 | The current investigation | [GFP component comparison](https://github.com/TheThunda01/gfp-active-learning/tree/main/experiments/uncertainty_ablation) | [The proposed failure analysis](PORTFOLIO_PLAN.md#current-priority-depth-in-the-gfp-investigation) |
-| Public-health measurements | [Surveillance data quality](#surveillance-data-quality) | [The measurement foundations](#measurement-foundations) |
+| Public-health writing | [Beyond the Bug](#beyond-the-bug) | [The public-health atlas](#colombia-dengue-surveillance-atlas) |
 | A visual biological example | [Nature's Perfume Lab](#natures-perfume-lab) | [Protein structure evidence](#protein-structure-evidence) |
 | Practical review tools | [EvidenceTrail](#evidencetrail) | [Review Compass](#review-compass) |
 
 Read a project's question and example result first. Its README then leads to reproducible commands, methods, sources, and limits. The [glossary](docs/glossary.md) provides terminology; the [assumption register](docs/assumptions.md) explains collection-level boundaries.
+
+## Public-health atlas and book
+
+### Colombia Dengue Surveillance Atlas
+
+Follow the same 52 weeks in two places. For Antioquia, the 2019 source contains 4,980 dengue cases and a population denominator of 6,518,070 residents, or 76.4 recorded cases per 100,000 residents. For Bogotá, those weeks contain no dengue records. The Atlas leaves the case count and rate unavailable. Select either view, then download the summary to inspect the calculation. [Explore Antioquia](https://thethunda01.github.io/colombia-dengue-atlas/explore.html?department=05&event=210&start=2019&end=2019&first=1&last=52&metric=rate) · [Explore Bogotá](https://thethunda01.github.io/colombia-dengue-atlas/explore.html?department=11&event=210&start=2019&end=2019&first=1&last=52&metric=rate) · [Inspect the Atlas code and data](https://github.com/TheThunda01/colombia-dengue-atlas)
+
+### Beyond the Bug
+
+This is the home for a Quarto book on antimicrobial-resistance data integration and genomic epidemiology. Visit the repository for available material and its publication status. [Beyond the Bug](https://github.com/TheThunda01/beyond-the-bug)
 
 <a id="current-learning-investigation-gfp"></a>
 
