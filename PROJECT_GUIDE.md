@@ -10,7 +10,7 @@ The guide covers fourteen demonstrations that share a documentation standard. Tw
 | --- | --- | --- |
 | Public-health measurements | [Colombia Dengue Surveillance Atlas](#colombia-dengue-surveillance-atlas) | [Surveillance data quality](#surveillance-data-quality) |
 | The main research question | [Enzyme kinetics](#enzyme-kinetics-workbench) | [GFP](#gfp-active-learning), then [MAPK](#mapk-dynamics-lab) |
-| The current investigation | [GFP component comparison](https://github.com/TheThunda01/gfp-active-learning/tree/main/experiments/uncertainty_ablation) | [The proposed failure analysis](PORTFOLIO_PLAN.md#current-priority-depth-in-the-gfp-investigation) |
+| The current investigation | [GFP component comparison](https://github.com/TheThunda01/gfp-active-learning/tree/main/experiments/uncertainty_ablation) | [Which records survived the first shortlist?](https://github.com/TheThunda01/gfp-active-learning/tree/main/experiments/shortlist_review) |
 | Public-health writing | [Beyond the Bug](#beyond-the-bug) | [The public-health atlas](#colombia-dengue-surveillance-atlas) |
 | A visual biological example | [Nature's Perfume Lab](#natures-perfume-lab) | [Protein structure evidence](#protein-structure-evidence) |
 | Practical review tools | [EvidenceTrail](#evidencetrail) | [Review Compass](#review-compass) |
@@ -35,7 +35,7 @@ The completed [policy ablation](https://github.com/TheThunda01/gfp-active-learni
 
 Across four random-number seeds, diversity-only had the lowest mean error on more-distant sequence variants, and uncertainty-only had the lowest mean error on local variants. The comparison did not support the recorded prediction that combined selection would help most at distance. These results reuse public outcomes; they do not establish a general winning policy. The [report](https://github.com/TheThunda01/gfp-active-learning/blob/main/experiments/uncertainty_ablation/results/report.md) records the comparison and its limitations.
 
-The next proposed analysis asks whether the combined policy's uncertainty shortlist excludes useful candidates. That explanation has not been established. The later MAPK direction asks when a measurement-selection rule fails under different model or observation assumptions. See the [roadmap](PORTFOLIO_PLAN.md) for the planned comparisons and completion criteria.
+The [shortlist follow-up](https://github.com/TheThunda01/gfp-active-learning/tree/main/experiments/shortlist_review) compares both rules at the last point where they shared the same training records. Of the 64 diversity-only choices, 4 to 15 survived the first screen across four runs. The case study distinguishes eligibility from actual choices and follows prediction error through the next batch. [Explore the data](https://thethunda01.github.io/gfp-active-learning/)
 
 ## Featured reading path
 

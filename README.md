@@ -26,7 +26,7 @@ I expected a rule that combined uncertainty and diversity to help most on the mo
 
 ![Difference in the combined rule’s benefit on distant versus local variants, in RMSE units. Seed 11, +0.005. Seed 29, −0.079. Seed 47, +0.054. Seed 83, −0.097.](docs/images/gfp-distance-contrast.png)
 
-All four comparisons used the same evaluation observations. The report shows the error for each selection rule and the differences across starting samples. [Read the GFP comparison](https://github.com/TheThunda01/gfp-active-learning/blob/4b27c32047288e32a647e2e8b411f3b272d6113c/experiments/uncertainty_ablation/results/report.md) · [Inspect the figure data](https://github.com/TheThunda01/gfp-active-learning/blob/4b27c32047288e32a647e2e8b411f3b272d6113c/experiments/uncertainty_ablation/results/distance_benefit_contrast.csv)
+All four comparisons reused the same evaluation measurements. I followed up with a narrower question. Did the first screening step exclude records the diversity-only rule would have chosen? Across the four runs, just **4 to 15 of its 64 choices** reached the shortlist. The run that kept only four still gave the combined rule slightly lower error on the more mutated examples after the first batch. [Read the shortlist case study](https://github.com/TheThunda01/gfp-active-learning/tree/main/experiments/shortlist_review) · [Explore the four rules](https://thethunda01.github.io/gfp-active-learning/) · [Data for the figure above](https://github.com/TheThunda01/gfp-active-learning/blob/4b27c32047288e32a647e2e8b411f3b272d6113c/experiments/uncertainty_ablation/results/distance_benefit_contrast.csv)
 
 ## More of my work
 

@@ -1,18 +1,16 @@
 # Portfolio roadmap
 
-The direction is **from biological measurements to better experiments**: examine the inputs, test what a model can support, and investigate which observation would help next. The current priority is a focused follow-up to the GFP selection-policy comparison, followed by a deeper MAPK failure analysis.
+The direction is **from biological measurements to better experiments**: examine the inputs, test what a model can support, and investigate which observation would help next. The GFP shortlist follow-up is complete. The next proposed investigation examines when simulated MAPK measurement selection loses its advantage.
 
 The [project guide](PROJECT_GUIDE.md) covers the fourteen demonstrations in this roadmap and the companion public-health atlas and book. Enzyme kinetics is the introduction, GFP is the current investigation, and MAPK is the next research direction. The supporting projects supply measurement checks, evaluation methods, evidence workflows, and an accessible visual example. They use different systems and do not form an integrated discovery pipeline.
 
-## Current priority: depth in the GFP investigation
+<a id="current-priority-depth-in-the-gfp-investigation"></a>
+
+## Completed GFP shortlist investigation
 
 **Completed:** The [four-policy ablation](https://github.com/TheThunda01/gfp-active-learning/blob/main/experiments/uncertainty_ablation/README.md) compares selection rules using matched starting sets and budgets. Across four seeds, diversity-only had the lowest mean distant error and uncertainty-only the lowest mean local error. The combined policy did not support the prediction that it would help most at distance. These are exploratory findings on reused public outcomes.
 
-**Proposed next question:** Does the combined policy's uncertainty shortlist exclude candidates that the full-pool diversity rule selects?
-
-Before running the extension, specify the candidate-pool comparison, expected outcome, measurement budgets, and evaluation plan. Keep the existing results intact. Inspect selected candidates and error patterns, compare a competing explanation, and report negative or inconclusive findings. This is a planned analysis, not an established explanation for the current result.
-
-**Completion evidence:** a recorded plan, reproducible comparison, candidate-selection diagnostics, interpretation tied to the observed results, and a contribution record describing the decisions and implementation changes.
+The [shortlist case study](https://github.com/TheThunda01/gfp-active-learning/tree/main/experiments/shortlist_review) asks a neutral question about the two rules’ first decisions from a shared starting sample. The Linux replay matched both archived selection orders in all four runs. The shortlist kept 4 to 15 of the 64 diversity-only choices. The excluded choices alone cannot explain the later error differences because each rule then selected and learned from its own records. [Read the analysis plan](https://github.com/TheThunda01/gfp-active-learning/blob/main/experiments/shortlist_review/PLAN.md) · [Inspect the four-row result](https://github.com/TheThunda01/gfp-active-learning/blob/main/experiments/shortlist_review/results/seed_comparison.csv)
 
 ## Next direction: MAPK measurement selection
 
@@ -75,7 +73,7 @@ The groups below describe each project's role in the story, not a ranking of sci
 
 ## Later possibilities
 
-These are options after the focused GFP and MAPK work, not completed experiments or scheduled commitments.
+These options extend beyond the completed GFP comparison and the proposed MAPK study.
 
 - **A public-health bridge:** extend Surveillance with a worked question about denominator changes and reporting revisions. Observed summaries can use the captured real snapshot; unavailable historical releases must remain unknown or be represented by explicitly synthetic scenarios.
 - **Stronger external evaluation:** assess compatible independent conditions or data for the systems and morphology studies before changing model complexity. Consider a documented R/Bioconductor analysis, sequence-tool scaling, and an independent walkthrough of the review tools.
